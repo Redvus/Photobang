@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="79b12cf3-8f01-41d6-a648-dc8ba8092e86" name="Photobang" url="https://photobang.ru">
+        <fileTransfer rootFolder="/var/www/034_photobang" accessType="SFTP" host="176.57.215.214" port="22" sshConfigId="f6af337c-6dcf-496e-a03c-67b1d3f937a8" sshConfig="redvus@176.57.215.214:22 password">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" keepAliveTimeout="0" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>
