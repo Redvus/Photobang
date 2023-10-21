@@ -1,0 +1,91 @@
+/*===============================
+=            Stopper            =
+===============================*/
+
+body {
+    background-color: $third;
+}
+
+.wrapper {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.center-block {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    svg {
+        width: 20rem;
+        height: auto;
+        animation: fadeIn 2s;
+
+        .redvus-logo__red {
+            fill: #d9272e; //red
+        }
+
+        .redvus-logo__deepred {
+            fill: #5a2d2c; //deepred
+        }
+    }
+}
+
+h1 {
+    font-family: 'PF DinText Pro';
+    font-size: $font-size-h2;
+    text-align: center;
+    color: #5a2d2c; //deepred
+    margin-top: 2rem;
+    animation: fadeInUp 2s;
+}
+
+p {
+    display: block;
+    margin: 2rem auto 0;
+    text-align: center;
+}
+
+/*===============================
+=            Counter            =
+===============================*/
+
+.counter {
+    text-align: center;
+}
+
+ul {
+    margin-bottom: 4em;
+    padding: 0;
+}
+
+.chart {
+    display: inline-block;
+    width: 95px;
+    height: 95px;
+    margin: 0 10px;
+    vertical-align: top;
+    position: relative;
+    padding-top: 22px;
+    font-family: 'PlumbBoldC';
+    font-size: 1em;
+    color: #ffb819;
+}
+
+.chart span {
+    display: block;
+    font-size: 2em;
+    font-weight: normal;
+}
+
+.chart canvas {
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+/*=====  End of Stopper  ======*/

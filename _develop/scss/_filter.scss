@@ -1,0 +1,423 @@
+/*==============================
+=            Filter            =
+==============================*/
+
+.category {
+
+	&-filter {
+		width: calc(((100% / 4) * 1) - 5%);
+		height: calc(100% - 100px - 5rem);
+		background-color: $primary;
+		padding: 3rem 3% 2rem 2%;
+		position: fixed;
+		right: 50px;
+		top: 50px;
+		overflow: scroll;
+		-webkit-overflow-scrolling: touch;
+		z-index: 9000;
+
+		&__breadcrumbs {
+			width: 100%;
+			height: 2rem;
+			display: flex;
+			align-items: center;
+			justify-content: flex-start;
+			font-size: $font-size-small;
+			padding-bottom: 0.5rem;
+			border-bottom: 0.075rem solid $filterBorderColor;
+
+			ul {
+
+				li {
+					display: inline-block;
+					color: $colorBreadrumbs;
+
+					a {
+						color: $colorBreadrumbs;
+					}
+
+					// &.active {
+					// 	// color: $colorBorderBreadrumbsHover;
+					// }
+
+					&:hover {
+
+						a {
+							color: $colorBorderBreadrumbsHover;
+						}
+					}
+				}
+			}
+		}
+
+		&__head {
+			width: 100%;
+			min-height: 3rem;
+			display: flex;
+			flex-direction: column;
+
+			.filter-head {
+				width: 100%;
+				height: 3rem;
+				display: flex;
+				flex-direction: row;
+
+				&__title {
+					width: 40%;
+					height: 3rem;
+					display: flex;
+					align-items: center;
+					justify-content: flex-start;
+					margin: 0;
+					font-size: $font-size-base;
+				}
+
+				&__sort {
+					width: 30%;
+					height: 3rem;
+					display: flex;
+					align-items: center;
+					justify-content: center;
+					font-size: $font-size-small;
+
+					a {
+						color: $filterBorderColor;
+					}
+				}
+
+				&__limit {
+					width: 30%;
+					height: 3rem;
+					display: flex;
+					align-items: center;
+					justify-content: flex-end;
+
+					select {
+						font-size: $font-size-base;
+					}
+				}
+			}
+		}
+
+		select {
+			width: 100%;
+			height: 2rem;
+			background-color: $primary;
+			color: $filterBorderColor;
+			padding: 0.3rem 0;
+			border: 0.15rem solid $filterBorderColor;
+			border-radius: 0;
+			margin: 0;
+			outline: none;
+			font-size: $font-size-small;
+		}
+
+		fieldset {
+			border: none;
+			padding: 0 0 0.5rem;
+			margin: 0.5rem 0;
+			color: $colorTextOnBlack;
+			font-size: $font-size-small;
+			border-bottom: 0.075rem solid $filterBorderColor;
+
+			.mse2_number_slider {
+				height: 0.3rem;
+				background-color: $filterBorderColor;
+				border: none;
+				display: flex;
+				align-items: center;
+				margin: 2rem 0;
+			}
+
+			.mse2_number_inputs {
+				// width: 100%;
+				display: flex;
+				flex-direction: row;
+				align-items: center;
+				margin: 1rem 0;
+			}
+
+			.form-group {
+
+				.input-sm {
+					width: 70%;
+					background-color: $primary;
+					color: $colorTextOnBlack;
+					// display: flex;
+					// align-items: center;
+					// justify-content: center;
+					padding: 0.3rem 0;
+					border: 0.15rem solid $filterBorderColor;
+					text-align: center;
+				}
+			}
+
+			label {
+				// margin-bottom: 0.15rem;
+				line-height: 1.85;
+
+				span {
+					width: 80%;
+				}
+			}
+
+			sup {
+				width: 1rem;
+				height: 1rem;
+				background-color: $filterColorDisabled;
+				display: block;
+				// vertical-align: middle;
+				text-align: center;
+				padding: 0 0.15rem 0.3rem;
+				float: right;
+			}
+
+			.disabled {
+				color: $filterBorderColor;
+			}
+
+			span {
+
+				svg {
+					width: 1rem;
+					height: 1rem;
+
+					polyline,
+					polygon,
+					line {
+						fill: none;
+						stroke-width: 3;
+						stroke: $secondary;
+					}
+				}
+			}
+		}
+
+		.form-search {
+			display: flex;
+			flex-direction: row;
+			align-items: center;
+			justify-content: flex-end;
+
+			&__input {
+				width: 100%;
+
+				input {
+					width: calc(100% - 1.3rem);
+					background-color: transparent;
+					border: 0.15rem solid $filterBorderColor;
+					padding: 0.5rem;
+					margin: 0;
+					outline: none;
+					color: $secondary;
+					font-size: $font-size-small;
+				}
+			}
+
+			&__button {
+				width: 2.3rem;
+				height: 2.3rem;
+				position: absolute;
+				background-color: $filterBorderColor;
+				border: none;
+				border-radius: 0;
+				margin: 0;
+				// transform: translateX(-100%);
+			}
+		}
+
+		&__select {
+			min-height: 2rem;
+			border-bottom: 0.075rem solid $filterBorderColor;
+			padding-bottom: 0.5rem;
+			// margin-top: 1rem;
+			color: $filterBorderColor;
+			font-size: $font-size-small;
+
+
+			a {
+				color: $secondary;
+			}
+
+			// .filter-select {
+			// 	// display: flex;
+			// 	// flex-direction: column;
+			// }
+		}
+
+		&__back-mobile {
+			// width: 100%;
+			// height: 100vh;
+			position: fixed;
+			background-color: $filterBackgroundMobile;
+			top: 0;
+			right: 0;
+			bottom: 0;
+			left: 0;
+			z-index: -1;
+			opacity: 0;
+		}
+
+		&__close {
+			width: 3rem;
+			height: 3rem;
+			position: fixed;
+			top: 0;
+			right: 0;
+			background-color: $primary;
+			display: none;
+			visibility: hidden;
+			align-items: center;
+			justify-content: center;
+			z-index: 9999;
+
+			#categoryFilterClose {
+				width: 2rem;
+				height: 2rem;
+				position: absolute;
+				fill: $filterColorClose;
+				transform: rotate(45deg);
+				transform-origin: 50% 50%;
+			}
+		}
+	}
+
+	@include grid-media($XLarge) {
+
+	    &__back-mobile {
+			display: none;
+			visibility: hidden;
+	    }
+	}
+
+	@include grid-media($Large) {
+
+	    &__back-mobile {
+			display: none;
+			visibility: hidden;
+	    }
+	}
+
+	@include grid-media($Medium) {
+
+		&-filter {
+			width: calc(((100% / 3) * 1) - 4%);
+			padding: 3rem 2% 2rem;
+
+			&__breadcrumbs {
+
+				ul {
+
+					li {
+						font-size: $font-size-small;
+					}
+				}
+			}
+
+			fieldset {
+
+				.form-group {
+
+					.input-sm {
+						color: $secondary;
+					}
+				}
+
+				.mse2_number_slider {
+					display: none;
+					visibility: hidden;
+				}
+			}
+		}
+
+		&__back-mobile {
+			display: none;
+			visibility: hidden;
+	    }
+	}
+
+	@include grid-media($XSmall) {
+
+		&-filter {
+			width: calc(((100% / 2) * 1) - 4% - 50px);
+			padding: 3rem 2% 2rem;
+
+			fieldset {
+
+				.form-group {
+
+					.input-sm {
+						color: $secondary;
+					}
+				}
+
+				.mse2_number_slider {
+					display: none;
+					visibility: hidden;
+				}
+			}
+		}
+
+		&__back-mobile {
+			display: none;
+			visibility: hidden;
+	    }
+	}
+
+	@include grid-media($Small) {
+
+		&-filter {
+			width: calc(85% - 2rem);
+			height: calc(100vh - 4rem);
+			padding: 2rem 1rem;
+			position: fixed;
+			right: -150%;
+			top: 0;
+			overflow: auto;
+			z-index: -1;
+			// transform: translateX(100%);
+
+			&__back-mobile {
+				display: block;
+				visibility: visible;
+		    }
+
+		    &__close {
+		    	display: flex;
+		    	visibility: visible;
+		    }
+
+		    select,
+		    input,
+		    fieldset {
+				color: $secondary;
+				// -webkit-appearance: none;
+			}
+
+			fieldset {
+
+				.form-group {
+
+					.input-sm {
+						color: $secondary;
+					}
+				}
+
+				.mse2_number_slider {
+					display: none;
+					visibility: hidden;
+				}
+			}
+		}
+	}
+}
+
+#mse2_sort .sort[data-dir="asc"] span:after {
+	content: "↑";
+}
+
+#mse2_sort .sort[data-dir="desc"] span:after {
+	content: "↓";
+}
+
+/*=====  End of Filter  ======*/

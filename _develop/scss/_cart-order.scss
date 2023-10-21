@@ -1,0 +1,150 @@
+/*==================================
+=            Cart Order            =
+==================================*/
+
+.cart-order {
+	width: 60%;
+	padding: 4rem 20% 8rem;
+
+	&__table {
+		width: calc(100% - 0.3rem);
+		min-height: 3rem;
+		display: flex;
+		flex-direction: row;
+		background-color: $secondary;
+		border: 0.15rem solid $cartOrderBorder;
+		margin-bottom: 1rem;
+	}
+
+	@include grid-media($Small) {
+	    width: calc(100% - 4rem);
+	    padding: 2rem 2rem 6rem;
+
+	    &__table {
+	    	flex-direction: column;
+	    }
+	}
+}
+
+.order {
+
+	&-table {
+
+		&__image {
+			width: 30%;
+			height: 15rem;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			overflow: hidden;
+
+			img {
+				width: auto;
+				height: 100%;
+			}
+		}
+
+		&__title {
+			width: calc(40% - 4rem);
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			border-left: 0.15rem solid $cartOrderBorder;
+			border-right: 0.15rem solid $cartOrderBorder;
+			padding: 0 2rem;
+
+			a {
+				font-size: $font-size-large;
+			}
+		}
+
+		&__num {
+			width: 30%;
+			min-height: 2rem;
+			font-size: $font-size-large;
+
+			.table-num {
+
+				&__count {
+					width: 100%;
+					height: 50%;
+					display: flex;
+					align-items: center;
+					justify-content: center;
+					border-bottom: 0.15rem solid $cartOrderBorder;
+				}
+
+				&__price {
+					width: 100%;
+					height: 50%;
+					display: flex;
+					align-items: center;
+					justify-content: center;
+				}
+			}
+		}
+	}
+
+	&-total {
+		width: calc(100% - 100px);
+		height: 6rem;
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		justify-content: center;
+		position: fixed;
+		bottom: 50px;
+		left: 50px;
+		background-color: $primary;
+
+		h2 {
+			color: $secondary;
+		}
+	}
+
+	@include grid-media($Small) {
+
+	    &-table {
+
+			&__image {
+				width: 100%;
+				height: 10rem;
+			}
+
+			&__title {
+				width: calc(100% - 2rem);
+				min-height: 5rem;
+				padding: 0 1rem;
+				border-left: none;
+				border-right: none;
+				border-top: 0.15rem solid $cartOrderBorder;
+				border-bottom: 0.15rem solid $cartOrderBorder;
+				text-align: center;
+			}
+
+			&__num {
+				width: 100%;
+
+				.table-num {
+
+					&__count,
+					&__price {
+						min-height: 3rem;
+					}
+				}
+			}
+	    }
+
+	    &-total {
+	    	width: 100%;
+	    	height: 4rem;
+	    	left: 0;
+
+	    	h2 {
+	    		font-size: $font-size-large;
+	    	}
+	    }
+	}
+}
+
+/*=====  End of Cart Order  ======*/

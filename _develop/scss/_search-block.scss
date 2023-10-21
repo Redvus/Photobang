@@ -1,0 +1,475 @@
+/*===================================
+=            Right Block            =
+===================================*/
+
+.search {
+
+	&-block {
+		width: calc(100% - 100px - 6rem);
+		height: calc(50vh - 6rem);
+		position: fixed;
+		left: 50px;
+		bottom: -100%;
+		padding: 3rem;
+		background-color: $secondary;
+		z-index: 90;
+		display: flex;
+		flex-direction: column;
+		// align-items: center;
+		// justify-content: center;
+		// transform: translateY(100%);
+		// transform-origin: 0 100%;
+
+		&--hidden {
+			display: none;
+			visibility: hidden;
+			transform: translateX(100%);
+		}
+
+		&--visible {
+			display: flex;
+			align-items: center;
+		}
+
+		&__form {
+			width: 100%;
+			height: 60%;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+
+			.form-search {
+				width: 60%;
+				display: flex;
+				flex-direction: row;
+				align-items: center;
+				justify-content: flex-end;
+				// transform: translateX(-50%);
+
+				&__input {
+					width: 100%;
+
+
+					input {
+						width: calc(100% - 1rem);
+						background-color: transparent;
+						border-top: 0.15rem solid $filterBorderColor;
+						border-bottom: 0.15rem solid $filterBorderColor;
+						border-right: none;
+						border-left: none;
+						padding: 1rem 0.5rem;
+						margin: 0;
+						outline: none;
+						color: $primary;
+						font-size: $font-size-large;
+					}
+				}
+
+				&__button {
+					width: 3.5rem;
+					height: 3.5rem;
+					position: absolute;
+					background-color: transparent;
+					border: none;
+					border-radius: 0;
+					margin: 0;
+					padding: 0.5rem;
+					cursor: pointer;
+					transition: transform 0.3s;
+
+					#searchButton {
+
+						path {
+							fill: $filterBorderColor;
+						}
+					}
+
+					&:hover {
+						transform: translateX(10%);
+
+						#searchButton {
+							transform: rotate(15deg);
+
+							path {
+								fill: $primary;
+							}
+						}
+					}
+				}
+			}
+
+			&__help {
+				position: absolute;
+				top: 0;
+				margin-top: 4%;
+			}
+
+			&-mobile {
+				width: calc(100% - 50px);
+				height: 50px;
+				display: none;
+				visibility: hidden;
+				align-items: center;
+				background-color: $searchMobileBackground;
+				right: 0;
+				top: 0;
+				position: fixed;
+				// transform: translateY(-100%);
+				z-index: 9999;
+
+				.form-search {
+					width: 100%;
+					height: 100%;
+					display: flex;
+					flex-direction: row;
+					align-items: center;
+					// transform: translateX(-50%);
+
+					&__input {
+						width: calc(100% - 50px);
+						height: 100%;
+
+						input {
+							width: calc(100% - 1rem);
+							height: calc(100% - 1rem);
+							background-color: transparent;
+							border: none;
+							padding: 0.5rem;
+							margin: 0;
+							outline: none;
+							color: $searchMobileColor;
+							font-size: $font-size-large;
+						}
+					}
+
+					&__button {
+						width: calc(4rem - 1rem);
+						height: calc(4rem - 1rem);
+						background-color: transparent;
+						border: none;
+						border-radius: 0;
+						margin: 0;
+						padding: 0.5rem;
+						cursor: pointer;
+						transition: transform 0.3s;
+
+						#searchButton {
+
+							path {
+								fill: $searchMobileColor;
+							}
+						}
+					}
+				}
+			}
+		}
+
+		&__help {
+			height: 40%;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			text-align: center;
+			font-size: $font-size-small;
+			// top: 0;
+			// margin-top: 4%;
+		}
+	}
+
+	&-back {
+		width: 50%;
+		height: 100vh;
+		top: 0;
+		left: 0;
+		position: fixed;
+		background-color: $secondary;
+		z-index: 9450;
+		opacity: 0.7;
+		// display: none;
+		// visibility: hidden;
+		transform: translateX(-100%);
+
+		&--visible {
+			display: block;
+			visibility: visible;
+		}
+	}
+
+	&-toggle {
+		width: 5rem;
+		height: 5rem;
+		left: 50%;
+		bottom: 0;
+		display: flex;
+		align-items: flex-start;
+		justify-content: center;
+		position: fixed;
+		// background-color: $secondary;
+		cursor: pointer;
+		transform: translate(-50%, 30px);
+		// transition: transform $base-duration;
+		z-index: 9550;
+
+		#searchBack {
+			width: 5rem;
+			height: 5rem;
+			position: absolute;
+			bottom: 0;
+			fill: $secondary;
+			transform: rotate(-90deg);
+		}
+
+		// .menu-back {
+		// 	width: 5rem;
+		// 	height: 5rem;
+		// 	fill: $secondary;
+		// 	position: absolute;
+		// }
+
+		#searchIcon {
+			width: 40px;
+			height: 40px;
+			position: absolute;
+			padding: 0 5px 10px;
+		}
+
+		#searchBottle {
+			fill: lighten($primary, 50%);
+			// stroke-width: 2.5;
+			// stroke: $primary;
+			position: absolute;
+			opacity: 0;
+			transform: scale(0.7);
+			// transform-origin: 100% 50%;
+		}
+
+		#searchMagnifier {
+			fill: $primary;
+			position: absolute;
+			transform: translate(-20%, 0);
+		}
+
+		&:hover {
+			// transform: translate(-0.3rem, -50%);
+
+			#searchBack {
+				transform: rotate(-90deg) translateX(30px);
+			}
+
+			#searchBottle {
+				opacity: 1;
+				transform: scale(1);
+			}
+
+			#searchMagnifier {
+				transform: translate(0, 0);
+			}
+
+		}
+
+		&--open {
+			width: 5rem;
+			height: 5rem;
+			top: 50%;
+			right: -0.31rem;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			position: fixed;
+			// background-color: $secondary;
+			cursor: pointer;
+			transform: translate(-2rem, -50%);
+			transition: transform $base-duration;
+			z-index: 9550;
+
+			#searchBack {
+				width: 5rem;
+				height: 5rem;
+				transform: rotate(180deg);
+			}
+
+			.menu-back {
+				width: 5rem;
+				height: 5rem;
+				fill: $primary;
+				position: absolute;
+			}
+
+			#searchIconOver {
+				width: 3rem;
+				height: 3rem;
+				position: absolute;
+				margin-left: 0.5rem;
+				padding: 0.3rem;
+			}
+
+			#searchCross {
+				fill: lighten($primary, 50%);
+				opacity: 0;
+				position: absolute;
+				// transform: scale(0);
+				transform-origin: 40% 50%;
+			}
+
+			&:hover {
+				// transform: translate(-2rem, -50%);
+
+				#searchCross {
+					fill: $secondary;
+					transform: rotate(180deg);
+				}
+			}
+		}
+	}
+
+	&-close {
+		width: 3rem;
+		height: 3rem;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		// border-radius: 50%;
+		// border: 0.3rem solid $secondary;
+		background-color: $searchCloseBackground;
+		position: absolute;
+		left: 50%;
+		top: 0;
+		transform: translate(-50%, -50%) rotate(45deg);
+		cursor: pointer;
+		transition: background 0.3s;
+		transform-origin: 50% 50%;
+		z-index: 9600;
+
+		svg {
+			width: 2rem;
+			height: 2rem;
+			// transform: rotate(45deg);
+
+			polygon {
+				fill: $secondary;
+			}
+		}
+
+		&:hover {
+
+			svg {
+				transform: rotate(-180deg);
+			}
+		}
+	}
+
+	&-toggle-mobile {
+		width: 50px;
+		height: 50px;
+		right: 50px;
+		position: absolute;
+		align-items: center;
+		justify-content: center;
+		transform: translate(0, 0);
+
+		svg {
+			width: 30px;
+			height: 30px;
+			position: absolute;
+		}
+
+		#searchMobileClose {
+			opacity: 0;
+		}
+	}
+
+	@include grid-media($Large) {
+
+		&-toggle-mobile {
+			display: none;
+			visibility: hidden;
+		}
+	}
+
+	@include grid-media($Medium) {
+
+		&-block {
+
+			.form-search {
+				width: 80%;
+			}
+		}
+
+		&-toggle-mobile {
+			display: none;
+			visibility: hidden;
+		}
+	}
+
+	@include grid-media($Small) {
+
+		&-block {
+			// width: calc(100% - 2rem);
+			// height: calc(50vh - 2rem);
+			// left: 0;
+			// padding: 1rem;
+			display: none;
+			visibility: hidden;
+
+			&__form {
+
+				.form-search {
+					width: 100%;
+				}
+
+				&-mobile {
+					display: flex;
+					visibility: visible;
+				}
+			}
+
+			&__help {
+				display: none;
+				visibility: hidden;
+
+				p {
+					font-size: $font-size-small;
+					text-align: center;
+				}
+			}
+		}
+
+		&-toggle {
+			// width: 50px;
+			// height: 50px;
+			// left: 0;
+			// align-items: center;
+			// justify-content: center;
+			// transform: translate(0, 0);
+			display: none;
+			visibility: hidden;
+
+			#searchBack {
+				display: none;
+				visibility: hidden;
+			}
+
+			#searchIcon {
+				padding-bottom: 5px;
+			}
+
+			#searchBottle {
+				display: none;
+				visibility: hidden;
+			}
+
+			#searchMagnifier {
+				transform: translate(0, 0);
+			}
+		}
+
+		&-toggle-mobile {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			visibility: visible;
+		}
+	}
+}
+
+/*=====  End of Right Block  ======*/

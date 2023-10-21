@@ -1,0 +1,227 @@
+/*===================================
+=            Right Block            =
+===================================*/
+
+.right {
+
+	&-block {
+		width: calc(50% - 14rem);
+		height: calc(100vh - 6rem);
+		position: fixed;
+		right: 0;
+		top: 0;
+		bottom: 0;
+		padding: 3rem 8rem 3rem 6rem;
+		background-color: $primary;
+		z-index: 9500;
+		display: flex;
+		align-items: center;
+		transform: translateX(100%);
+		// transform-origin: 0 100%;
+
+		&--hidden {
+			display: none;
+			visibility: hidden;
+			transform: translateX(100%);
+		}
+
+		&--visible {
+			display: flex;
+			align-items: center;
+		}
+
+		.form-search {
+			width: 100%;
+			display: flex;
+			flex-direction: row;
+			align-items: center;
+			justify-content: flex-end;
+
+			&__input {
+				width: 100%;
+
+				input {
+					width: calc(100% - 1rem);
+					background-color: transparent;
+					border-top: 0.15rem solid $filterBorderColor;
+					border-bottom: 0.15rem solid $filterBorderColor;
+					border-right: none;
+					border-left: none;
+					padding: 1rem 0.5rem;
+					margin: 0;
+					outline: none;
+					color: $secondary;
+					font-size: $font-size-large;
+				}
+			}
+
+			&__button {
+				width: 3.5rem;
+				height: 3.5rem;
+				position: absolute;
+				background-color: transparent;
+				border: none;
+				border-radius: 0;
+				margin: 0;
+				padding: 0.5rem;
+				cursor: pointer;
+				transition: transform 0.3s;
+
+				#searchButton {
+					fill: $filterBorderColor;
+				}
+
+				&:hover {
+					transform: translateX(10%);
+
+					#searchButton {
+						fill: $secondary;
+						transform: rotate(15deg);
+					}
+				}
+			}
+		}
+	}
+
+	&-back {
+		width: 50%;
+		height: 100vh;
+		top: 0;
+		left: 0;
+		position: fixed;
+		background-color: $secondary;
+		z-index: 9450;
+		opacity: 0.7;
+		// display: none;
+		// visibility: hidden;
+		transform: translateX(-100%);
+
+		&--visible {
+			display: block;
+			visibility: visible;
+		}
+	}
+
+	&-toggle {
+		width: 5rem;
+		height: 5rem;
+		top: 50%;
+		right: -0.31rem;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		position: fixed;
+		// background-color: $secondary;
+		cursor: pointer;
+		transform: translate(0, -50%);
+		transition: transform $base-duration;
+		z-index: 9550;
+
+		#searchBack {
+			width: 5rem;
+			height: 5rem;
+			transform: rotate(180deg);
+		}
+
+		.menu-back {
+			width: 5rem;
+			height: 5rem;
+			fill: $secondary;
+			position: absolute;
+		}
+
+		#searchIcon {
+			width: 3rem;
+			height: 3rem;
+			position: absolute;
+			margin-left: 0.5rem;
+			padding: 0.3rem;
+		}
+
+		#searchBottle {
+			fill: lighten($primary, 50%);
+			// stroke-width: 2.5;
+			// stroke: $primary;
+			position: absolute;
+			opacity: 0;
+			transform: translateX(100%) scale(0.7) rotate(20deg);
+			transform-origin: 100% 50%;
+		}
+
+		#searchMagnifier {
+			fill: $primary;
+			position: absolute;
+			transform: translate(-20%, 0);
+		}
+
+		&:hover {
+			transform: translate(-0.3rem, -50%);
+
+			#searchBottle {
+				opacity: 1;
+				transform: translateX(0) scale(1) rotate(0);
+			}
+
+			#searchMagnifier {
+				transform: translate(0, 0);
+			}
+
+		}
+
+		&--open {
+			width: 5rem;
+			height: 5rem;
+			top: 50%;
+			right: -0.31rem;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			position: fixed;
+			// background-color: $secondary;
+			cursor: pointer;
+			transform: translate(-2rem, -50%);
+			transition: transform $base-duration;
+			z-index: 9550;
+
+			#searchBack {
+				width: 5rem;
+				height: 5rem;
+				transform: rotate(180deg);
+			}
+
+			.menu-back {
+				width: 5rem;
+				height: 5rem;
+				fill: $primary;
+				position: absolute;
+			}
+
+			#searchIconOver {
+				width: 3rem;
+				height: 3rem;
+				position: absolute;
+				margin-left: 0.5rem;
+				padding: 0.3rem;
+			}
+
+			#searchCross {
+				fill: lighten($primary, 50%);
+				opacity: 0;
+				position: absolute;
+				// transform: scale(0);
+				transform-origin: 40% 50%;
+			}
+
+			&:hover {
+				// transform: translate(-2rem, -50%);
+
+				#searchCross {
+					fill: $secondary;
+					transform: rotate(180deg);
+				}
+			}
+		}
+	}
+}
+
+/*=====  End of Right Block  ======*/

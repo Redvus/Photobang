@@ -1,0 +1,972 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"cons",
+				"console_log"
+			],
+			[
+				"comm",
+				"comm-subsection\tComment - Subsection comment"
+			],
+			[
+				"Powe",
+				"Power1"
+			],
+			[
+				"com",
+				"comm-section\tComment - Full section comment"
+			],
+			[
+				"fon",
+				"font-weight"
+			],
+			[
+				"bord",
+				"border"
+			],
+			[
+				"pad",
+				"padding"
+			],
+			[
+				"pagin",
+				"_pagination.scss"
+			],
+			[
+				"pa",
+				"padding"
+			],
+			[
+				"trs",
+				"trf-sc\ttransform: scale(${1:x}, ${2:y});"
+			],
+			[
+				"anim",
+				"anim-\tanimation: ${1:name} ${2:duration} ${3:timing-function} ${4:delay} ${5:iteration-count} ${6:direction} ${7:fill-mode};"
+			],
+			[
+				"bdr",
+				"bdr-n\tborder-right: none;"
+			],
+			[
+				"loadP",
+				"loadProduct"
+			],
+			[
+				"m",
+				"middle"
+			],
+			[
+				"tr",
+				"trs\ttransition: ${1:prop} ${2:time};"
+			],
+			[
+				"jc",
+				"jc-fs\tjustify-content: flex-start;"
+			],
+			[
+				"bg",
+				"bg+\tbackground: ${1:#fff} url(${2}) ${3:0} ${4:0} ${5:no-repeat};"
+			],
+			[
+				"br",
+				"border-radius"
+			],
+			[
+				"ani",
+				"anim-\tanimation: ${1:name} ${2:duration} ${3:timing-function} ${4:delay} ${5:iteration-count} ${6:direction} ${7:fill-mode};"
+			],
+			[
+				"out",
+				"outline"
+			],
+			[
+				"td",
+				"td-l\ttext-decoration: line-through;"
+			],
+			[
+				"b",
+				"bold"
+			],
+			[
+				"jcf",
+				"jc-fe\tjustify-content: flex-end;"
+			],
+			[
+				"im",
+				"images_loaded_count"
+			],
+			[
+				"ima",
+				"images_loaded_count"
+			],
+			[
+				"anm",
+				"anim-\tanimation: ${1:name} ${2:duration} ${3:timing-function} ${4:delay} ${5:iteration-count} ${6:direction} ${7:fill-mode};"
+			],
+			[
+				"navMen",
+				"navMenuIcon"
+			],
+			[
+				"bra",
+				"border-radius"
+			],
+			[
+				"trfs",
+				"trf-sc\ttransform: scale(${1:x}, ${2:y});"
+			],
+			[
+				"tu",
+				"tt-u\ttext-transform: uppercase;"
+			],
+			[
+				"class",
+				"addClass"
+			],
+			[
+				"fi",
+				"fixed"
+			],
+			[
+				"mh",
+				"min-height"
+			],
+			[
+				"l",
+				"list-style"
+			],
+			[
+				"aif",
+				"ai-fs\talign-items: flex-start;"
+			],
+			[
+				"ai",
+				"ai-fe\talign-items: flex-end;"
+			],
+			[
+				"borr",
+				"border-right"
+			],
+			[
+				"le",
+				"letter-spacing"
+			],
+			[
+				"trf",
+				"trf-skx\ttransform: skewX(${1:angle});"
+			],
+			[
+				"bgr",
+				"bgr-n\tbackground-repeat: no-repeat;"
+			],
+			[
+				"and",
+				"animdel\tanimation-delay: ${1:time};"
+			],
+			[
+				"r",
+				"relative"
+			],
+			[
+				"po",
+				"pos-a\tposition: absolute;"
+			],
+			[
+				"back",
+				"background-color"
+			],
+			[
+				"ovs",
+				"ov-s\toverflow: scroll;"
+			],
+			[
+				"fd",
+				"fxd-r\tflex-direction: row;"
+			],
+			[
+				"tfrt",
+				"trf-ty\ttransform: translateY(${1:y});"
+			],
+			[
+				"pr",
+				"pr\tpadding-right"
+			],
+			[
+				"di",
+				"d-ib\tdisplay: inline-block;"
+			],
+			[
+				"anfm",
+				"animfm-bt\tanimation-fill-mode: both;"
+			],
+			[
+				"ann",
+				"animn\tanimation-name: ${1:none};"
+			],
+			[
+				"fnt",
+				"font-size"
+			],
+			[
+				"trsf",
+				"trf-sc\ttransform: scale(${1:x}, ${2:y});"
+			],
+			[
+				"min",
+				"min-height"
+			],
+			[
+				"s",
+				"scroll"
+			],
+			[
+				"si",
+				"font-size"
+			],
+			[
+				"mar",
+				"margin"
+			],
+			[
+				"tal",
+				"ta-l\ttext-align: left;"
+			],
+			[
+				"background",
+				"background-attachment"
+			],
+			[
+				"p",
+				"p\tpadding"
+			],
+			[
+				"pd",
+				"padding"
+			],
+			[
+				"bac",
+				"background-color"
+			],
+			[
+				"med",
+				"media\tmedia"
+			],
+			[
+				"medi",
+				"@media\t@media ${1:screen} {\n\t${0}\n}"
+			],
+			[
+				"in",
+				"inline-block"
+			],
+			[
+				"sidebar",
+				"Sidebar"
+			],
+			[
+				"ba",
+				"background-image"
+			],
+			[
+				"bo",
+				"box-shadow"
+			],
+			[
+				"bd",
+				"bdc\tborder-color: #${1:000};"
+			],
+			[
+				"ea",
+				"ease-in-cubic"
+			],
+			[
+				"op",
+				"opacity"
+			],
+			[
+				"c",
+				"center"
+			],
+			[
+				"pos",
+				"position"
+			],
+			[
+				"cu",
+				"cursor"
+			],
+			[
+				"fu",
+				"function"
+			],
+			[
+				"wi",
+				"width"
+			],
+			[
+				"sel",
+				"user-select"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "/Volumes/Vault13/!Sites/Garage_dev/_develop/scss/_all_variables.scss",
+			"settings":
+			{
+				"buffer_size": 10355,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 400.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"pi",
+				"Package Control: Install Package"
+			],
+			[
+				"p",
+				"Package Control: Remove Package"
+			],
+			[
+				"Snippet: ",
+				"Snippet: tween"
+			],
+			[
+				"ocp",
+				"Origami: Clone File to Pane on the Right"
+			],
+			[
+				"Package Control: ",
+				"Package Control: Install Package"
+			],
+			[
+				"i",
+				"Package Control: Install Package"
+			],
+			[
+				"pa",
+				"Package Control: Install Package"
+			],
+			[
+				"pac",
+				"Install Package Control"
+			]
+		],
+		"width": 609.0
+	},
+	"console":
+	{
+		"height": 139.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/Volumes/Vault13/!Sites/Garage_dev/_develop",
+		"/Volumes/Vault13/!Sites/Garage_dev/_develop/_js",
+		"/Volumes/Vault13/!Sites/Garage_dev/_develop/scss",
+		"/Volumes/Vault13/!Sites/Garage_dev/core/components/site_elements",
+		"/Volumes/Vault13/!Sites/Garage_dev/core/components/site_elements/chunks",
+		"/Volumes/Vault13/!Sites/Garage_dev/core/components/site_elements/chunks/category",
+		"/Volumes/Vault13/!Sites/Garage_dev/core/components/site_elements/chunks/header",
+		"/Volumes/Vault13/!Sites/Garage_dev/core/components/site_elements/chunks/msearch",
+		"/Volumes/Vault13/!Sites/Garage_dev"
+	],
+	"file_history":
+	[
+		"/Volumes/Vault13/!Sites/Garage_dev/_develop/scss/_header.scss",
+		"/Volumes/Vault13/!Sites/Garage_dev/core/components/site_elements/chunks/header/header.tpl",
+		"/Volumes/Vault13/!Sites/Garage_dev/_develop/scss/_search-block.scss",
+		"/Volumes/Vault13/!Sites/Garage_dev/core/components/site_elements/chunks/msearch/g_search-block.tpl",
+		"/Volumes/Vault13/!Sites/Garage_dev/_develop/_js/main.js",
+		"/Volumes/Vault13/!Sites/Garage_dev/_develop/scss/_front.scss",
+		"/Volumes/Vault13/!Sites/Garage_dev/_develop/scss/_cart.scss",
+		"/Volumes/Vault13/!Sites/Garage_dev/_develop/scss/_nav.scss",
+		"/Volumes/Vault13/!Sites/Garage_dev/core/components/site_elements/chunks/category/g_category.tpl",
+		"/Volumes/Vault13/!Sites/Garage_dev/_develop/_js/msearch.js",
+		"/Volumes/Vault13/!Sites/Garage_dev/gulpfile.js",
+		"/Volumes/Vault13/!Sites/Garage_dev/core/components/site_elements/chunks/header/nav-main.tpl",
+		"/Volumes/Vault13/!Sites/Garage_dev/_develop/scss/_search.scss",
+		"/Volumes/Vault13/!Sites/Garage_dev/_develop/scss/_category.scss",
+		"/Volumes/Vault13/!Sites/Garage_dev/_develop/scss/_vendor.scss",
+		"/Volumes/Vault13/!Sites/Garage_dev/core/components/site_elements/chunks/product/g_msProduct-content_2.tpl",
+		"/Volumes/Vault13/!Sites/Garage_dev/core/components/site_elements/chunks/cart/g_msCart.tpl",
+		"/Volumes/Vault13/!Sites/Garage_dev/core/components/site_elements/chunks/product/g_msOptions.tpl",
+		"/Volumes/Vault13/!Sites/Garage_dev/core/components/site_elements/chunks/product/g_msProductOptions.tpl",
+		"/Volumes/Vault13/!Sites/Garage_dev/core/components/site_elements/chunks/cart/g_cart-content.tpl",
+		"/Volumes/Vault13/!Sites/Garage_dev/_develop/scss/_minicart.scss",
+		"/Volumes/Vault13/!Sites/Garage_dev/_develop/scss/_dynamiv-cart.scss",
+		"/Volumes/Vault13/!Sites/Garage_dev/_develop/scss/main.scss",
+		"/Volumes/Vault13/!Sites/Garage_dev/core/components/site_elements/chunks/vendor/g_vendor-content.tpl",
+		"/Volumes/Vault13/!Sites/Garage_dev/core/components/site_elements/chunks/vendor/g_vendorFirstTpl.tpl",
+		"/Volumes/Vault13/!Sites/Garage_dev/core/components/site_elements/chunks/vendor/g_vendorWrapperTpl.tpl",
+		"/Volumes/Vault13/!Sites/Garage_dev/core/components/site_elements/chunks/mfilter/g_mfilter2_outer.tpl",
+		"/Volumes/Vault13/!Sites/Garage_dev/_develop/scss/_filter.scss",
+		"/Volumes/Vault13/!Sites/Garage_dev/core/components/site_elements/chunks/category/g_wine-content.tpl",
+		"/Volumes/Vault13/!Sites/Garage_dev/core/components/site_elements/chunks/vendor/g_vendorTpl.tpl",
+		"/Volumes/Vault13/!Sites/Garage_dev/core/components/site_elements/chunks/vendor/g_vendor.tpl",
+		"/Volumes/Vault13/!Sites/Garage_dev/core/components/site_elements/chunks/vendor/g_vendor-country-content.tpl",
+		"/Volumes/Vault13/!Sites/Garage_dev/core/components/site_elements/chunks/vendor/g_vendorCountryTpl.tpl",
+		"/Volumes/Vault13/!Sites/Garage_dev/core/components/site_elements/chunks/category/g_wine-all-content.tpl",
+		"/Volumes/Vault13/!Sites/Garage_dev/core/components/site_elements/templates/g_vendorCategory_template.tpl",
+		"/Volumes/Vault13/!Sites/Garage_dev/core/components/site_elements/chunks/vendor/g_vendor-category.tpl",
+		"/Volumes/Vault13/!Sites/Garage_dev/core/components/site_elements/chunks/product/g_msProduct-content.tpl",
+		"/Volumes/Vault13/!Sites/Garage_dev/_develop/scss/_product.scss",
+		"/Volumes/Vault13/!Sites/Garage_dev/core/components/site_elements/chunks/msearch/g_msearch2_form.tpl",
+		"/Volumes/Vault13/!Sites/Garage_dev/core/components/site_elements/templates/g_category_template.tpl",
+		"/Volumes/Vault13/!Sites/Garage_dev/core/components/site_elements/templates/g_main_template.tpl",
+		"/Volumes/Vault13/!Sites/Garage_dev/_develop/scss/jquery-ui.scss",
+		"/Volumes/Vault13/!Sites/Garage_dev/_develop/scss/_layout.scss",
+		"/Volumes/Vault13/!Sites/Garage_dev/core/components/site_elements/chunks/footer/scripts.tpl",
+		"/Volumes/Vault13/!Sites/Garage_dev/core/components/site_elements/chunks/header/head.tpl",
+		"/Volumes/Vault13/!Sites/Garage_dev/core/components/site_elements/templates/g_vendor_template.tpl",
+		"/Volumes/Vault13/!Sites/Garage_dev/core/components/site_elements/chunks/footer/footer.tpl",
+		"/Volumes/Vault13/!Sites/Garage_dev/core/components/site_elements/chunks/msearch/g_search-content.tpl",
+		"/Volumes/Vault13/!Sites/Garage_dev/_develop/scss/_info.scss",
+		"/Volumes/Vault13/!Sites/Garage_dev/core/components/site_elements/chunks/front/g_permission.tpl",
+		"/Volumes/Vault13/!Sites/Garage_dev/_develop/scss/_permission.scss",
+		"/Volumes/Vault13/!Sites/Garage_dev/core/components/site_elements/chunks/front/g_frontSliderTpl.tpl",
+		"/Volumes/Vault13/!Sites/Garage_dev/_develop/scss/_slider.scss",
+		"/Volumes/Vault13/!Sites/Garage_dev/_develop/_js/shop.js",
+		"/Volumes/Vault13/!Sites/Garage_dev/_develop/scss/login.scss",
+		"/Volumes/Vault13/!Sites/Garage_dev/_develop/_js/Garage.sublime-project",
+		"/Volumes/Vault13/!Sites/Garage_dev/core/components/site_elements/chunks/front/g_front-content.tpl",
+		"/Volumes/Vault13/!Sites/Garage_dev/core/components/site_elements/chunks/g_main-content.tpl",
+		"/Volumes/Vault13/!Sites/Garage_dev/core/components/site_elements/templates/g_product_template.tpl",
+		"/Volumes/Vault13/!Sites/Garage_dev/core/components/site_elements/chunks/front/g_front-content_2.tpl",
+		"/Volumes/Vault13/!Sites/Garage_dev/_develop/_js/preloader.js",
+		"/Volumes/Vault13/!Sites/Garage_dev/_develop/scss/_preloader.scss",
+		"/Volumes/Vault13/!Sites/Garage_dev/core/components/site_elements/chunks/front/g_front-warning-text.tpl",
+		"/Volumes/Vault13/!Sites/Garage_dev/core/components/site_elements/chunks/msearch/g_right-block.tpl",
+		"/Volumes/Vault13/!Sites/Garage_dev/core/components/site_elements/chunks/front/g_front-slider.tpl",
+		"/Volumes/Vault13/!Sites/Garage_dev/core/components/site_elements/chunks/product/g_msProduct-description_2.tpl",
+		"/Volumes/Vault13/!Sites/Garage_dev/_develop/scss/_masterslider.scss",
+		"/Volumes/Vault13/!Sites/Garage_dev/core/components/site_elements/chunks/product/g_msProduct-description.tpl",
+		"/Volumes/Vault13/!Sites/Garage_dev/core/components/site_elements/chunks/product/g_product-content.tpl",
+		"/Volumes/Vault13/!Sites/Garage_dev/_develop/scss/_pagination.scss",
+		"/Volumes/Vault13/!Sites/Garage_dev/_develop/Garage.sublime-project",
+		"/Volumes/Vault13/!Sites/Garage_dev/_develop/scss/_contact.scss",
+		"/Volumes/Vault13/!Sites/Garage_dev/core/components/site_elements/chunks/front/g_front_text.tpl",
+		"/Volumes/Vault13/!Sites/Garage_dev/_develop/_js/vendor.js",
+		"/Volumes/Vault13/!Sites/Garage_dev/bower.json",
+		"/Volumes/Vault13/!Sites/Garage_dev/package.json",
+		"/Volumes/Vault13/!Sites/Garage_dev/sublime-gulp.log",
+		"/Volumes/Vault13/!Sites/Garage_dev/_develop/scss/neat/neat/mixins/_grid-media.scss",
+		"/Volumes/Vault13/!Sites/Garage_dev/_develop/scss/_all_variables.scss",
+		"/Volumes/Vault13/!Sites/Garage_dev/core/components/site_elements/chunks/info/g_infoTextTpl.tpl",
+		"/Volumes/Vault13/!Sites/Garage_dev/core/components/site_elements/chunks/info/g_info-content.tpl",
+		"/Volumes/Vault13/!Sites/Garage_dev/_develop/_js/info_tab.js",
+		"/Volumes/Vault13/!Sites/Garage_dev/core/components/site_elements/chunks/mail/g_ms_email.tpl",
+		"/Volumes/Vault13/!Sites/Garage_dev/_develop/scss/_cart-order.scss",
+		"/Volumes/Vault13/!Sites/Garage_dev/core/components/site_elements/chunks/order/g_getOrder_basic.tpl",
+		"/Volumes/Vault13/!Sites/Garage_dev/core/components/site_elements/chunks/order/g_getOrder.tpl",
+		"/Volumes/Vault13/!Sites/Garage_dev/core/components/site_elements/chunks/order/g_getOrder_test.tpl",
+		"/Volumes/Vault13/!Sites/Garage_dev/_develop/scss/_order.scss",
+		"/Volumes/Vault13/!Sites/Garage_dev/core/components/site_elements/chunks/order/g_order.tpl",
+		"/Volumes/Vault13/!Sites/Mail/Garage/index.html",
+		"/Users/redvus/Library/Application Support/Sublime Text 3/Packages/User/gulp_path_modx.sublime-snippet",
+		"/Users/redvus/Library/Application Support/Sublime Text 3/Packages/User/bourbon_media.sublime-snippet",
+		"/Volumes/Vault13/!Sites/Garage_dev/core/components/site_elements/chunks/product/g_msGallery.tpl",
+		"/Users/redvus/Library/Application Support/Sublime Text 3/Packages/User/Default (OSX).sublime-keymap",
+		"/Users/redvus/Library/Application Support/Sublime Text 3/Packages/Origami/Default (OSX).sublime-keymap",
+		"/Volumes/Vault13/!Sites/Garage_dev/core/components/site_elements/chunks/category/g_cognac-content.tpl",
+		"/Volumes/Vault13/!Sites/Garage_dev/assets/_develop/scss/_vendor.scss",
+		"/Volumes/Vault13/!Sites/Garage_dev/core/components/site_elements/chunks/vendor/g_vendor-description.tpl",
+		"/Volumes/Vault13/!Sites/Garage_dev/assets/_develop/scss/_contact.scss",
+		"/Volumes/Vault13/!Sites/Garage_dev/core/components/site_elements/chunks/g_contact-content.tpl",
+		"/Volumes/Vault13/!Sites/Garage_dev/assets/_develop/scss/_category.scss",
+		"/Volumes/Vault13/!Sites/Garage_dev/assets/_develop/scss/_layout.scss",
+		"/Volumes/Vault13/!Sites/Garage_dev/assets/_develop/scss/_info.scss",
+		"/Volumes/Vault13/!Sites/Garage_dev/assets/_develop/scss/_nav.scss",
+		"/Volumes/Vault13/!Sites/Garage_dev/assets/_develop/scss/_product.scss",
+		"/Volumes/Vault13/!Sites/Garage_dev/assets/_develop/scss/_minicart.scss",
+		"/Volumes/Vault13/!Sites/Garage_dev/assets/_develop/scss/_filter.scss",
+		"/Volumes/Vault13/!Sites/Garage_dev/assets/_develop/scss/_search-block.scss",
+		"/Volumes/Vault13/!Sites/Garage_dev/assets/_develop/scss/_search.scss",
+		"/Volumes/Vault13/!Sites/Garage_dev/assets/_develop/scss/_front.scss",
+		"/Volumes/Vault13/!Sites/Garage_dev/assets/_develop/_js/front.js",
+		"/Volumes/Vault13/!Sites/Garage_dev/assets/_develop/_js/main.js",
+		"/Volumes/Vault13/!Sites/Garage_dev/vault/templates/default/security/login.tpl",
+		"/Volumes/Vault13/!Sites/Garage_dev/core/components/site_elements/chunks/mfilter/g_mfilter2_checkbox.tpl",
+		"/Volumes/Vault13/!Sites/Garage_dev/core/components/site_elements/chunks/mfilter/g_mfilter2_filter_number.tpl",
+		"/Volumes/Vault13/!Sites/Garage_dev/core/components/site_elements/chunks/mfilter/g_mfilter2_filter_select.tpl",
+		"/Volumes/Vault13/!Sites/Garage_dev/core/components/site_elements/basic&archive/g_msGallery_basic.tpl",
+		"/Volumes/Vault13/!Sites/Garage_dev/assets/_develop/_archive/msGallery_thumb.json",
+		"/Volumes/Vault13/!Sites/Garage_dev/assets/_develop/Garage.sublime-project",
+		"/Volumes/Vault13/!Sites/Garage_dev/core/components/site_elements/chunks/category/g_category_var2.tpl",
+		"/Volumes/Vault13/!Sites/Garage_dev/core/components/site_elements/chunks/product/g_msProduct-content2.tpl",
+		"/Volumes/Vault13/!Sites/Garage_dev/assets/components/minishop2/css/web/lib/fotorama.min.css",
+		"/Volumes/Vault13/!Sites/Garage_dev/assets/_develop/_js/shop.js",
+		"/Volumes/Vault13/!Sites/Garage_dev/assets/components/minishop2/js/web/lib/fotorama.min.js",
+		"/Volumes/Vault13/!Sites/Garage_dev/assets/_develop/_js/msminicartdynamic.js",
+		"/Volumes/Vault13/!Sites/Garage_dev/core/components/site_elements/chunks/minicart/g_minicartDynamicTpl.tpl",
+		"/Volumes/Vault13/!Sites/Garage_dev/assets/_develop/scss/_order.scss",
+		"/Volumes/Vault13/!Sites/Garage_dev/core/components/site_elements/chunks/minicart/g_quickview.tpl"
+	],
+	"find":
+	{
+		"height": 25.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"media",
+			"mob",
+			"]]\n",
+			"ui-state-default",
+			"background-color: $primary;",
+			"$colorText",
+			"color: $secondary;",
+			"text-indent",
+			"_title_",
+			"mse2_selected_wrapper",
+			"mse2_selected",
+			"permission-content",
+			"</strong>",
+			"<strong>",
+			"0.3rem",
+			"msGallery",
+			"productCart",
+			"lighten($primary, 50%)",
+			"lighten($primary, 90%)",
+			"#fff",
+			"selectorResult",
+			"mc-dynamic",
+			"mcd-table",
+			"4",
+			"right",
+			"bootstrap",
+			"totalCost",
+			"table-id",
+			"window",
+			"minicart",
+			"selected_wrapper_tpl",
+			"color",
+			"masterLoad",
+			"el",
+			"ec",
+			"document.querySelectorAll",
+			"')",
+			"('",
+			"$(",
+			"[[+galleryScriptID]]",
+			"slider_[[+galleryScriptID]]",
+			"slider[[+galleryScriptNum]]",
+			"bou",
+			"getElementByID",
+			"getElementsByID",
+			"getElementByID",
+			"('#",
+			"$(",
+			"menuArrow",
+			"menuDown",
+			"menuUp",
+			"$font-family-header",
+			"background-color: $fourth-opacity;",
+			"background-color: $secondary-opacity;",
+			"$('.imageGallery-top__left .imageGallery--inside.active')",
+			"$('.imageGallery-top__right .imageGallery--inside.active')",
+			"tlRight",
+			"tlLeft",
+			"slideInTopRight",
+			"slideOutTopRight",
+			"slideOutTopLeft",
+			"slideInTopLeft",
+			"slideIn",
+			"slideOut",
+			"-$leftPosition;",
+			"-$leftPosition",
+			"(43%",
+			"nav-next",
+			"ms-nav-next",
+			"ms-next",
+			"ms-nav",
+			"next",
+			"background: url(",
+			"scrollbar",
+			"body",
+			"#block-project",
+			"timer",
+			"infos",
+			"/*",
+			"TweenMax",
+			"$blockProject",
+			"<li>",
+			"TweenLite",
+			"TweenMax",
+			"rgba(247, 168, 0, 0.15)",
+			"rgba(0, 126, 154, 0.6)",
+			"pj-content",
+			"project-single",
+			"smooth",
+			"Project Single",
+			"0.15rem);",
+			"mask-gallery",
+			"gallery-top",
+			"gallery",
+			"arcbuild__black",
+			"100px",
+			"arcbuild__black",
+			"redvus-logo__red1",
+			"redvus-logo__deepred",
+			"redvus-logo__red",
+			"span-columns",
+			"all_variables",
+			".main-inside-top",
+			"ms-nav",
+			"$main-inside-height",
+			".main-content",
+			".main-inside",
+			"main-inside",
+			"$content-padding-right",
+			"animationEasing",
+			"second-top",
+			"partners",
+			"jQuery",
+			"front",
+			"500px",
+			"scroll",
+			"exports",
+			")\n",
+			"primary",
+			"assets",
+			"00",
+			"<div>\n    <img src=\"assets/images/magazine/[[*number-folder]]/001.jpg\" alt=\"\">\n</div>\n<div style=\"background-image:url(assets/images/magazine/[[*number-folder]]/002.jpg);\"></div>\n<div style=\"background-image:url(assets/images/magazine/[[*number-folder]]/003.jpg);\"></div>\n<div style=\"background-image:url(assets/images/magazine/[[*number-folder]]/004.jpg);\"></div>\n<div style=\"background-image:url(assets/images/magazine/[[*number-folder]]/005.jpg);\"></div>\n<div style=\"background-image:url(assets/images/magazine/[[*number-folder]]/006.jpg);\"></div>\n<div style=\"background-image:url(assets/images/magazine/[[*number-folder]]/007.jpg);\"></div>\n<div style=\"background-image:url(assets/images/magazine/[[*number-folder]]/008.jpg);\"></div>\n<div style=\"background-image:url(assets/images/magazine/[[*number-folder]]/009.jpg);\"></div>\n<div style=\"background-image:url(assets/images/magazine/[[*number-folder]]/010.jpg);\"></div>\n<div style=\"background-image:url(assets/images/magazine/[[*number-folder]]/011.jpg);\"></div>\n<div style=\"background-image:url(assets/images/magazine/[[*number-folder]]/012.jpg);\"></div>\n<div style=\"background-image:url(assets/images/magazine/[[*number-folder]]/013.jpg);\"></div>\n<div style=\"background-image:url(assets/images/magazine/[[*number-folder]]/014.jpg);\"></div>\n<div style=\"background-image:url(assets/images/magazine/[[*number-folder]]/015.jpg);\"></div>\n<div style=\"background-image:url(assets/images/magazine/[[*number-folder]]/016.jpg);\"></div>\n<div style=\"background-image:url(assets/images/magazine/[[*number-folder]]/017.jpg);\"></div>\n<div style=\"background-image:url(assets/images/magazine/[[*number-folder]]/018.jpg);\"></div>\n<div style=\"background-image:url(assets/images/magazine/[[*number-folder]]/019.jpg);\"></div>\n<div style=\"background-image:url(assets/images/magazine/[[*number-folder]]/020.jpg);\"></div>\n<div style=\"background-image:url(assets/images/magazine/[[*number-folder]]/021.jpg);\"></div>\n<div style=\"background-image:url(assets/images/magazine/[[*number-folder]]/022.jpg);\"></div>\n<div style=\"background-image:url(assets/images/magazine/[[*number-folder]]/023.jpg);\"></div>\n<div style=\"background-image:url(assets/images/magazine/[[*number-folder]]/024.jpg);\"></div>\n<div style=\"background-image:url(assets/images/magazine/[[*number-folder]]/025.jpg);\"></div>\n<div style=\"background-image:url(assets/images/magazine/[[*number-folder]]/026.jpg);\"></div>\n<div style=\"background-image:url(assets/images/magazine/[[*number-folder]]/027.jpg);\"></div>\n<div style=\"background-image:url(assets/images/magazine/[[*number-folder]]/028.jpg);\"></div>\n<div style=\"background-image:url(assets/images/magazine/[[*number-folder]]/029.jpg);\"></div>\n<div style=\"background-image:url(assets/images/magazine/[[*number-folder]]/030.jpg);\"></div>\n<div style=\"background-image:url(assets/images/magazine/[[*number-folder]]/031.jpg);\"></div>\n<div style=\"background-image:url(assets/images/magazine/[[*number-folder]]/032.jpg);\"></div>\n<div style=\"background-image:url(assets/images/magazine/[[*number-folder]]/033.jpg);\"></div>\n<div style=\"background-image:url(assets/images/magazine/[[*number-folder]]/034.jpg);\"></div>\n<div style=\"background-image:url(assets/images/magazine/[[*number-folder]]/035.jpg);\"></div>\n<div style=\"background-image:url(assets/images/magazine/[[*number-folder]]/036.jpg);\"></div>\n<div style=\"background-image:url(assets/images/magazine/[[*number-folder]]/037.jpg);\"></div>\n<div style=\"background-image:url(assets/images/magazine/[[*number-folder]]/038.jpg);\"></div>\n<div style=\"background-image:url(assets/images/magazine/[[*number-folder]]/039.jpg);\"></div>\n<div style=\"background-image:url(assets/images/magazine/[[*number-folder]]/040.jpg);\"></div>\n<div style=\"background-image:url(assets/images/magazine/[[*number-folder]]/041.jpg);\"></div>\n<div style=\"background-image:url(assets/images/magazine/[[*number-folder]]/042.jpg);\"></div>\n<div style=\"background-image:url(assets/images/magazine/[[*number-folder]]/043.jpg);\"></div>\n<div style=\"background-image:url(assets/images/magazine/[[*number-folder]]/044.jpg);\"></div>\n<div style=\"background-image:url(assets/images/magazine/[[*number-folder]]/045.jpg);\"></div>\n<div style=\"background-image:url(assets/images/magazine/[[*number-folder]]/046.jpg);\"></div>\n<div style=\"background-image:url(assets/images/magazine/[[*number-folder]]/047.jpg);\"></div>\n<div style=\"background-image:url(assets/images/magazine/[[*number-folder]]/048.jpg);\"></div>\n<div style=\"background-image:url(assets/images/magazine/[[*number-folder]]/049.jpg);\"></div>\n<div style=\"background-image:url(assets/images/magazine/[[*number-folder]]/050.jpg);\"></div>\n<div style=\"background-image:url(assets/images/magazine/[[*number-folder]]/051.jpg);\"></div>\n<div style=\"background-image:url(assets/images/magazine/[[*number-folder]]/052.jpg);\"></div>\n<div style=\"background-image:url(assets/images/magazine/[[*number-folder]]/053.jpg);\"></div>\n<div style=\"background-image:url(assets/images/magazine/[[*number-folder]]/054.jpg);\"></div>\n<div style=\"background-image:url(assets/images/magazine/[[*number-folder]]/055.jpg);\"></div>\n<div style=\"background-image:url(assets/images/magazine/[[*number-folder]]/056.jpg);\"></div>\n<div style=\"background-image:url(assets/images/magazine/[[*number-folder]]/057.jpg);\"></div>\n<div style=\"background-image:url(assets/images/magazine/[[*number-folder]]/058.jpg);\"></div>\n<div style=\"background-image:url(assets/images/magazine/[[*number-folder]]/059.jpg);\"></div>\n<div style=\"background-image:url(assets/images/magazine/[[*number-folder]]/060.jpg);\"></div>\n<div style=\"background-image:url(assets/images/magazine/[[*number-folder]]/061.jpg);\"></div>\n<div style=\"background-image:url(assets/images/magazine/[[*number-folder]]/062.jpg);\"></div>\n<div style=\"background-image:url(assets/images/magazine/[[*number-folder]]/063.jpg);\"></div>\n<div style=\"background-image:url(assets/images/magazine/[[*number-folder]]/064.jpg);\"></div>\n<div style=\"background-image:url(assets/images/magazine/[[*number-folder]]/065.jpg);\"></div>\n<div style=\"background-image:url(assets/images/magazine/[[*number-folder]]/066.jpg);\"></div>\n<div style=\"background-image:url(assets/images/magazine/[[*number-folder]]/067.jpg);\"></div>\n<div style=\"background-image:url(assets/images/magazine/[[*number-folder]]/068.jpg);\"></div>\n<div style=\"background-image:url(assets/images/magazine/[[*number-folder]]/069.jpg);\"></div>\n<div style=\"background-image:url(assets/images/magazine/[[*number-folder]]/070.jpg);\"></div>\n<div style=\"background-image:url(assets/images/magazine/[[*number-folder]]/071.jpg);\"></div>\n<div style=\"background-image:url(assets/images/magazine/[[*number-folder]]/072.jpg);\"></div>\n<div style=\"background-image:url(assets/images/magazine/[[*number-folder]]/073.jpg);\"></div>\n<div style=\"background-image:url(assets/images/magazine/[[*number-folder]]/074.jpg);\"></div>\n<div style=\"background-image:url(assets/images/magazine/[[*number-folder]]/075.jpg);\"></div>\n<div style=\"background-image:url(assets/images/magazine/[[*number-folder]]/076.jpg);\"></div>\n<div style=\"background-image:url(assets/images/magazine/[[*number-folder]]/077.jpg);\"></div>\n<div style=\"background-image:url(assets/images/magazine/[[*number-folder]]/078.jpg);\"></div>\n<div style=\"background-image:url(assets/images/magazine/[[*number-folder]]/079.jpg);\"></div>\n<div style=\"background-image:url(assets/images/magazine/[[*number-folder]]/080.jpg);\"></div>\n<div style=\"background-image:url(assets/images/magazine/[[*number-folder]]/081.jpg);\"></div>\n<div style=\"background-image:url(assets/images/magazine/[[*number-folder]]/082.jpg);\"></div>\n<div style=\"background-image:url(assets/images/magazine/[[*number-folder]]/083.jpg);\"></div>\n<div style=\"background-image:url(assets/images/magazine/[[*number-folder]]/084.jpg);\"></div>\n<div style=\"background-image:url(assets/images/magazine/[[*number-folder]]/085.jpg);\"></div>\n<div style=\"background-image:url(assets/images/magazine/[[*number-folder]]/086.jpg);\"></div>\n<div style=\"background-image:url(assets/images/magazine/[[*number-folder]]/087.jpg);\"></div>\n<div style=\"background-image:url(assets/images/magazine/[[*number-folder]]/088.jpg);\"></div>\n<div style=\"background-image:url(assets/images/magazine/[[*number-folder]]/089.jpg);\"></div>\n<div style=\"background-image:url(assets/images/magazine/[[*number-folder]]/090.jpg);\"></div>\n<div style=\"background-image:url(assets/images/magazine/[[*number-folder]]/091.jpg);\"></div>\n<div style=\"background-image:url(assets/images/magazine/[[*number-folder]]/092.jpg);\"></div>\n<div style=\"background-image:url(assets/images/magazine/[[*number-folder]]/093.jpg);\"></div>\n<div style=\"background-image:url(assets/images/magazine/[[*number-folder]]/094.jpg);\"></div>\n<div style=\"background-image:url(assets/images/magazine/[[*number-folder]]/095.jpg);\"></div>\n<div style=\"background-image:url(assets/images/magazine/[[*number-folder]]/096.jpg);\"></div>\n<div style=\"background-image:url(assets/images/magazine/[[*number-folder]]/097.jpg);\"></div>\n<div style=\"background-image:url(assets/images/magazine/[[*number-folder]]/098.jpg);\"></div>\n<div style=\"background-image:url(assets/images/magazine/[[*number-folder]]/099.jpg);\"></div>\n<div style=\"background-image:url(assets/images/magazine/[[*number-folder]]/100.jpg);\"></div>\n<div style=\"background-image:url(assets/images/magazine/[[*number-folder]]/101.jpg);\"></div>\n<div style=\"background-image:url(assets/images/magazine/[[*number-folder]]/102.jpg);\"></div>\n<div style=\"background-image:url(assets/images/magazine/[[*number-folder]]/103.jpg);\"></div>\n<div style=\"background-image:url(assets/images/magazine/[[*number-folder]]/104.jpg);\"></div>",
+			"o-loader"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"h"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "/Volumes/Vault13/!Sites/Garage_dev/_develop/scss/_all_variables.scss",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 10355,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2909,
+								2891
+							]
+						],
+						"settings":
+						{
+							"bracket_highlighter.busy": false,
+							"bracket_highlighter.clone": -1,
+							"bracket_highlighter.clone_locations":
+							{
+								"close":
+								{
+								},
+								"icon":
+								{
+								},
+								"open":
+								{
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.clone_regions":
+							[
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content"
+							],
+							"bracket_highlighter.locations":
+							{
+								"close":
+								{
+								},
+								"icon":
+								{
+								},
+								"open":
+								{
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.regions":
+							[
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content"
+							],
+							"syntax": "Packages/SCSS/SCSS.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 25.0
+	},
+	"input":
+	{
+		"height": 37.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.SublimeLinter":
+	{
+		"height": 0.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"output.gulp_output":
+	{
+		"height": 110.0
+	},
+	"output.mdpopups":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "Garage.sublime-project",
+	"replace":
+	{
+		"height": 46.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"",
+				"/Volumes/Vault13/!Sites/Benchmark_dev/Benchmark.sublime-project"
+			]
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 273.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

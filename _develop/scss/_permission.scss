@@ -1,0 +1,243 @@
+/*======================================
+=            Permission 18+            =
+======================================*/
+
+.permission {
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba($six, 0.8);
+    position: fixed;
+    z-index: 9999;
+
+    &-content {
+        width: calc(40% - 4rem);
+        min-height: calc(40% - 4rem);
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        padding: 2rem;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        background-color: #fff;
+
+        &__logo {
+            width: 5rem;
+            height: 2.5rem;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            padding: 0.5rem;
+            position: absolute;
+            left: 50%;
+            top: 0;
+            transform: translate(-50%, -50%);
+            background-color: #fff;
+
+            img {
+                width: 100%;
+                height: auto;
+                display: block;
+                z-index: 1;
+            }
+        }
+
+        &__close {
+            width: 2rem;
+            height: 2rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: absolute;
+            top: 0;
+            right: 0;
+            padding: 1rem;
+            cursor: pointer;
+
+            svg {
+                width: 1.3rem;
+                height: 1.3rem;
+                transform: rotate(-45deg);
+                transition: transform 0.3s;
+            }
+
+            &:hover {
+
+                svg {
+                    transform: rotate(135deg);
+                }
+            }
+        }
+
+        &__age {
+            text-align: center;
+        }
+
+        &__text {
+
+            p {
+                font-size: $font-size-small;
+            }
+        }
+
+        &__button {
+            width: 100%;
+            height: 3rem;
+            display: flex;
+            justify-content: center;
+            margin-top: 1rem;
+            z-index: 10;
+
+            span#permissionButton {
+                width: 50%;
+                height: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                // padding: 0.5rem 1rem;
+                background-color: $primary;
+                color: $secondary;
+                cursor: pointer;
+                transition: background 0.3s;
+
+                &:hover {
+                    background-color: $secondary;
+                }
+            }
+        }
+
+        &__alert {
+            width: calc(100% - 8rem);
+            height: 7rem;
+            display: flex;
+            align-items: center;
+            position: absolute;
+            padding: 1rem 2rem;
+            bottom: 2.5rem;
+            background-color: $error;
+            opacity: 0;
+
+            p {
+                font-size: $font-size-base;
+                color: $secondary;
+            }
+        }
+    }
+
+    &-visible {
+        display: block;
+        visibility: visible;
+    }
+
+    &-hidden {
+        display: none;
+        visibility: hidden;
+    }
+
+    @include grid-media($Medium) {
+        z-index: 99999;
+
+        &-content {
+            width: calc(60% - 4rem);
+            min-height: calc(60% - 4rem);
+
+            &__age {
+
+                h1 {
+                    font-size: $font-size-large + 2;
+                }
+            }
+
+            &__button {
+
+
+                span#permissionButton {
+                    width: 100%;
+                }
+            }
+
+            &__alert {
+                height: 55%;
+            }
+        }
+    }
+
+    @include grid-media($XSmall) {
+        z-index: 99999;
+
+        &-content {
+            width: calc(60% - 4rem);
+            min-height: calc(50% - 4rem);
+
+            &__age {
+
+                h1 {
+                    font-size: $font-size-large + 2;
+                }
+            }
+
+            &__button {
+
+
+                span#permissionButton {
+                    width: 100%;
+                }
+            }
+
+            &__alert {
+                height: 65%;
+                bottom: 2rem;
+            }
+        }
+    }
+
+    @include grid-media($Small) {
+        z-index: 99999;
+
+        &-content {
+            width: calc(90% - 2rem);
+            min-height: calc(65% - 2rem);
+            font-size: $font-size-small;
+            padding: 1rem;
+
+            &__age {
+
+                h1 {
+                    font-size: $font-size-large + 1;
+                    margin-bottom: 0;
+                }
+            }
+
+            &__button {
+                margin-top: 0;
+
+                span#permissionButton {
+                    width: 100%;
+                }
+            }
+
+            &__welcome {
+
+                p {
+                    margin-bottom: 0.5rem;
+                }
+            }
+
+            &__alert {
+                width: calc(100% - 6rem);
+                height: 65%;
+                bottom: 1rem;
+
+                p {
+                    font-size: $font-size-small;
+                }
+            }
+        }
+    }
+}
+
+/*=====  End of Permission 18+  ======*/

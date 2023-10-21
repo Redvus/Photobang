@@ -1,0 +1,103 @@
+/*========================================
+=            Preloader simple            =
+========================================*/
+$backPreloader       : lighten($secondary, 5%);
+$backPreloaderDone   : lighten($secondary, 5%);
+$colorPreloader      : $third;
+$colorPreloaderLight : lighten($secondary, 20%);
+
+#page_loading {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: $backPreloader;
+    opacity: 1;
+    z-index: 99999;
+    opacity: 1;
+    visibility: visible;
+    transform-origin: 0 100%;
+    transition: all 1s;
+    transition-delay: 0.5s;
+
+    .loader {
+        width: 5rem;
+        height: 5rem;
+        position: absolute;
+        border: 0.5rem solid $colorPreloader;
+        border-radius: 50%;
+        border-top-color: $colorPreloaderLight;
+        // border-top-color: $colorPreloaderLight;
+        border-left-color: $colorPreloaderLight;
+        border-right-color: $colorPreloaderLight;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        animation: spin 1s infinite linear;
+        transition: all 0.5s;
+        opacity: 0;
+
+        svg {
+            // width: 100px;
+            // height: 100px;
+            // background-color: #fff;
+            animation: rotating 1.5s infinite;
+
+            // circle {
+            //     fill: none;
+            //     stroke: $primary;
+            //     stroke-width: 5;
+            // }
+        }
+
+        &--done {
+            opacity: 0;
+            visibility: hidden;
+        }
+
+        &-perc {
+            width: 5rem;
+            height: 5rem;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            line-height: 5rem;
+            text-align: center;
+            color: $colorPreloader;
+            transform: translate(-50%, -50%);
+
+            &--done {
+                opacity: 0;
+                visibility: hidden;
+                color: $backPreloader;
+            }
+        }
+    }
+
+    &.done {
+        opacity: 0;
+        background-color: $backPreloaderDone;
+        visibility: hidden;
+        // transform: scaleX(0);
+    }
+}
+
+@keyframes rotating {
+  from {}
+  to {transform: rotate(360deg);}
+}
+
+@keyframes spin {
+    0% {
+        opacity: 1;
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate(-50%, -50%) rotate(360deg);
+    }
+}
+
+/*=====  End of Preloader simple  ======*/
