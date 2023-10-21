@@ -71,73 +71,13 @@ gulp.task('login-scss', function(){
 
 gulp.task('main-js', function(){
     return gulp.src([
-        // path.src.js + 'nav.js',
+        path.src.js + 'nav.js',
         path.src.js + 'main.js'
     ])
-    // .pipe(concat('front.js'))
+    .pipe(concat('main.js'))
     .pipe(terser())
     .pipe(rename({suffix: "-min"}))
     .pipe(gulp.dest(path.dest.js));
-});
-
-gulp.task('park-js', function(){
-    return gulp.src([
-        path.src.js + 'SectionAnimation.js',
-        path.src.js + 'SectionTopAnimation.js',
-        path.src.js + 'park.js'
-    ])
-        .pipe(concat('park.js'))
-        .pipe(terser())
-        .pipe(rename({suffix: "-min"}))
-        .pipe(gulp.dest(path.dest.js));
-});
-
-gulp.task('projects-js', function(){
-    return gulp.src([
-        path.src.js + 'SectionAnimation.js',
-        path.src.js + 'SectionTopAnimation.js',
-        path.src.js + 'projects.js'
-    ])
-        .pipe(concat('projects.js'))
-        .pipe(terser())
-        .pipe(rename({suffix: "-min"}))
-        .pipe(gulp.dest(path.dest.js));
-});
-
-gulp.task('projectsSample-js', function(){
-    return gulp.src([
-        path.src.js + 'SectionAnimation.js',
-        path.src.js + 'SectionTopAnimation.js',
-        path.src.js + 'projectsSample.js'
-    ])
-        .pipe(concat('projectsSample.js'))
-        .pipe(terser())
-        .pipe(rename({suffix: "-min"}))
-        .pipe(gulp.dest(path.dest.js));
-});
-
-gulp.task('engineering-js', function(){
-    return gulp.src([
-        path.src.js + 'SectionAnimation.js',
-        path.src.js + 'SectionTopAnimation.js',
-        path.src.js + 'engineering.js'
-    ])
-        .pipe(concat('engineering.js'))
-        .pipe(terser())
-        .pipe(rename({suffix: "-min"}))
-        .pipe(gulp.dest(path.dest.js));
-});
-
-gulp.task('stividor-js', function(){
-    return gulp.src([
-        path.src.js + 'SectionAnimation.js',
-        path.src.js + 'SectionTopAnimation.js',
-        path.src.js + 'stividor.js'
-    ])
-        .pipe(concat('stividor.js'))
-        .pipe(terser())
-        .pipe(rename({suffix: "-min"}))
-        .pipe(gulp.dest(path.dest.js));
 });
 
 gulp.task('contact-js', function () {
@@ -199,32 +139,7 @@ gulp.task('watch', function() {
     gulp.watch(path.watch.scss + '*.scss', gulp.series('main-scss'));
     gulp.watch(path.watch.scss + 'login.scss', gulp.series('login-scss'));
     gulp.watch(path.watch.js + 'vendor.js', gulp.series('vendor-js'));
-    gulp.watch(path.watch.js + 'main.js', gulp.series('main-js'));
-    gulp.watch([
-        path.watch.js + 'park.js',
-        path.watch.js + 'SectionAnimation.js',
-        path.watch.js + 'SectionTopAnimation.js'],
-        gulp.series('park-js'));
-    gulp.watch([
-        path.watch.js + 'projects.js',
-        path.watch.js + 'SectionAnimation.js',
-        path.watch.js + 'SectionTopAnimation.js'],
-        gulp.series('projects-js'));
-    gulp.watch([
-            path.watch.js + 'projectsSample.js',
-            path.watch.js + 'SectionAnimation.js',
-            path.watch.js + 'SectionTopAnimation.js'],
-        gulp.series('projectsSample-js'));
-    gulp.watch([
-            path.watch.js + 'engineering.js',
-            path.watch.js + 'SectionAnimation.js',
-            path.watch.js + 'SectionTopAnimation.js'],
-        gulp.series('engineering-js'));
-    gulp.watch([
-            path.watch.js + 'stividor.js',
-            path.watch.js + 'SectionAnimation.js',
-            path.watch.js + 'SectionTopAnimation.js'],
-        gulp.series('stividor-js'));
+    gulp.watch([path.watch.js + 'main.js', path.watch.js + 'nav.js'], gulp.series('main-js'));
     gulp.watch(path.watch.js + 'contact.js', gulp.series('contact-js'));
     gulp.watch(path.watch.js + 'preloader.js', gulp.series('preloader-js'));
     // gulp.watch(path.watch.js + 'jgrowl.js', gulp.series('jgrowl-js'));

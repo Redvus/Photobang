@@ -8,17 +8,13 @@
 		width: 50%;
 		height: calc(100vh - (#{$headerWidth} * 2));
 		position: fixed;
-		left: -100%;
+		left: 0;
 		top: 0;
 		padding: $headerWidth 0;
 		background-color: $colorBack;
-		z-index: -1;
+		z-index: 9700;
 		display: block;
-		// flex-direction: row;
-		// align-items: center;
-		// justify-content: flex-end;
-		// transform: translateX(-100%);
-		// transform-origin: 0 100%;
+		//transform: translateX(calc(-100% - #{$headerWidth}));
 
 		&--hidden {
 			display: none;
@@ -92,62 +88,60 @@
 		}
 	}
 
+	&-close {
+		width: 3rem;
+		height: 3rem;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		// border-radius: 50%;
+		// border: 0.3rem solid $secondary;
+		background-color: $secondary;
+		position: absolute;
+		left: 50vw;
+		top: 50%;
+		transform: translate(-50%, -50%) rotate(45deg);
+		cursor: pointer;
+		transition: background 0.3s;
+		transform-origin: 50% 50%;
+		z-index: 9900;
+
+		svg {
+			width: 2rem;
+			height: 2rem;
+			// transform: rotate(45deg);
+
+			polygon {
+				fill: $primary;
+			}
+		}
+
+		&:hover {
+
+			svg {
+				transform: rotate(-180deg);
+			}
+		}
+	}
+
 	&-back {
 		width: 50%;
 		height: calc(100vh - 6rem);
 		top: 0;
-		right: -100%;
+		left: 0;
 		padding: 3rem 0;
 		position: fixed;
-		background-color: $primary;
+		background-color: $secondary;
 		z-index: -1;
 		display: block;
-		// align-items: center;
-		// opacity: 0.7;
-		// display: none;
-		// visibility: hidden;
-		// transform: translateX(100%);
+		transform: translateX(-100%);
 
 		&--visible {
 			display: block;
 			visibility: visible;
 		}
 
-		.nav-close {
-			width: 3rem;
-			height: 3rem;
-			display: flex;
-			align-items: center;
-			justify-content: center;
-			// border-radius: 50%;
-			// border: 0.3rem solid $secondary;
-			background-color: $primary;
-			position: absolute;
-			left: 0;
-			top: 50%;
-			transform: translate(-50%, -50%) rotate(45deg);
-			cursor: pointer;
-			transition: background 0.3s;
-			transform-origin: 50% 50%;
-			z-index: 9600;
 
-			svg {
-				width: 2rem;
-				height: 2rem;
-				// transform: rotate(45deg);
-
-				polygon {
-					fill: $secondary;
-				}
-			}
-
-			&:hover {
-
-				svg {
-					transform: rotate(-180deg);
-				}
-			}
-		}
 
 		@include grid-media($Medium) {
 			// width: calc(50% - 8rem);
@@ -197,7 +191,7 @@
 			position: absolute;
 		}
 
-		#menu_icon {
+		#menuIcon {
 			width: calc(#{$headerWidth} / 2);
 			height: calc(#{$headerWidth} / 2);
 			position: absolute;
@@ -207,15 +201,15 @@
 			transform-origin: 50% 50%;
 		}
 
-		#menu_up {
+		#menuUp {
 			transform-origin: center center;
 		}
 
-		#menu_down {
+		#menuDown {
 			transform-origin: center center;
 		}
 
-		#menu_arrow {
+		#menuArrow {
 			transform-origin: center center;
 		}
 
@@ -226,16 +220,16 @@
 				transform: translateX(8%);
 			}
 
-			#menu_icon {
+			#menuIcon {
 				transform: translateX(5%);
 			}
 
-			#menu_up,
-			#menu_down {
+			#menuUp,
+			#menuDown {
 				transform: translateX(-30%);
 			}
 
-			#menu_arrow {
+			#menuArrow {
 				transform: translateX(20px);
 			}
 		}
