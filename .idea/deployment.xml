@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="PublishConfigData" serverName="Photobang" remoteFilesAllowedToDisappearOnAutoupload="false">
+  <component name="PublishConfigData" serverName="Photobang" remoteFilesAllowedToDisappearOnAutoupload="false" confirmBeforeUploading="false">
+    <option name="confirmBeforeUploading" value="false" />
     <serverData>
       <paths name="Photobang">
         <serverdata>
           <mappings>
-            <mapping deploy="/html/assets" local="$PROJECT_DIR$/_build/css" web="/" />
-            <mapping deploy="/html/assets/js" local="$PROJECT_DIR$/_build/js" web="/" />
+            <mapping deploy="/assets" local="$PROJECT_DIR$/_build/css" web="/" />
+            <mapping deploy="/assets/js" local="$PROJECT_DIR$/_build/js" web="/" />
           </mappings>
         </serverdata>
       </paths>
