@@ -9,7 +9,7 @@
 	padding: $headerWidth;
 	position: relative;
 	// margin-bottom: calc(300px + 4rem);
-	background-color: $secondary;
+	//background-color: $secondary;
 	//transition: all .3s;
 	// box-shadow: 0 0.3rem 1rem rgba(0, 0, 0, 0.3);
 	z-index: 1;
@@ -127,9 +127,9 @@
 	}
 
     &-category {
-        // width: calc(((100% / 4) * 3) + 1.5rem - 50px);
+        width: calc(100% - ((#{$headerWidth} + (#{$headerWidth} + (#{$headerWidth} / 2)))));
         display: block;
-        padding-right: calc(((100% / 4) * 1) + 50px);
+        padding: calc(#{$headerWidth} + (#{$headerWidth} / 2)) $headerWidth calc(#{$headerWidth} + (#{$headerWidth} / 2)) calc(#{$headerWidth} + (#{$headerWidth} / 2));
     }
 
     &-cart {

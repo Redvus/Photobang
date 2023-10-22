@@ -5,7 +5,7 @@
 $primary   :   #000000; //
 $secondary :   #fff; //
 $third     :   #A3BCC2; //
-$bgColor   :   lighten($primary, 95%);
+$bgColor   :   lighten($primary, 80%);
 
 $error       :   #E6002F;
 $success     :   #3CB371;
@@ -38,6 +38,26 @@ $colorTextActive : $primary;                // Цвет активного пу�
 
 /*----------  Header  ----------*/
 $headerWidth: 4rem;
+
+/*----------  Layout  ----------*/
+$padding: 1rem;
+@mixin rowMachinePadding($numPerRow, $padding) {
+    width: calc((100% - ((#{$numPerRow} - 1) * (#{$padding} / 0.8))) / #{$numPerRow});
+    display: flex;
+    padding: 0 $padding $padding 0;
+
+    &:nth-child(n) {
+        //margin-bottom: 0;
+        margin-right: 0;
+    }
+
+    @include grid-media($Small) {
+        &:nth-child(n) {
+            width: calc((100% - ((#{$numPerRow} - 1) * (#{$padding} / 0.5))) / #{$numPerRow});
+            padding: calc(#{$padding} / 2);
+        }
+    }
+}
 
 /*----------  Front  ----------*/
 $frontTextWidth             : 60%;
@@ -85,11 +105,11 @@ $colorTextOnBlack           : lighten($primary, 80%);
 $backgroundRightColor       : lighten($primary, 95%);
 
 /*----------  Category  ----------*/
-$colorCategoryTitle         : lighten($primary, 80%);
-$colorCategoryPrice         : lighten($primary, 87%);
+$colorCategoryTitle         : lighten($primary, 90%);
+$colorCategoryPrice         : lighten($primary, 30%);
 $colorCategoryOldPrice      : lighten($primary, 50%);
 $colorCategoryVendor        : $colorCategoryPrice;
-$colorProductCart           : $colorCategoryOldPrice;
+$colorProductCart           : $secondary;
 
 /*----------  Search  ----------*/
 $searchCloseBackground      : lighten($primary, 30%);

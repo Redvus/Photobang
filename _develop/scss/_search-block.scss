@@ -196,8 +196,8 @@
 	}
 
 	&-toggle {
-		width: 5rem;
-		height: 5rem;
+		width: $headerWidth;
+		height: $headerWidth;
 		left: 50%;
 		bottom: 0;
 		display: flex;
@@ -206,13 +206,13 @@
 		position: fixed;
 		// background-color: $secondary;
 		cursor: pointer;
-		transform: translate(-50%, 30px);
+		transform: translate(-50%, calc(#{$padding} / 2));
 		// transition: transform $base-duration;
-		z-index: 9550;
+		z-index: 9990;
 
 		#searchBack {
-			width: 5rem;
-			height: 5rem;
+			width: $headerWidth;
+			height: $headerWidth;
 			position: absolute;
 			bottom: 0;
 			fill: $secondary;

@@ -87,7 +87,7 @@ function menuLeft() {
         // })
         .from(navClose, {
             duration: 0.3,
-            // delay: "-0.2",
+            delay: "-0.3",
             autoAlpha: 0,
             x: "-50%",
             ease: "expoScale.in"

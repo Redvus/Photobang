@@ -7,14 +7,14 @@
 	&-grid {
 		// width: calc(((100% / 4) * 3) + 1.5rem - 50px);
 		width: 100%;
-		min-height: calc(100vh - 100px);
+		min-height: calc(100vh - #{$headerWidth});
 		// margin-left: -1rem;
-		background-color: $bgColor;
+		//background-color: $bgColor;
 		display: block;
 		// display: flex;
 		// flex-direction: column;
 		// flex-wrap: wrap;
-		padding-bottom: 50px;
+		//padding-bottom: 50px;
 		// margin-right: calc(((100% / 4) * 1) - 7rem);
 		position: relative;
 
@@ -44,14 +44,13 @@
 	}
 
 	&-product {
-		// @include grid-column(1, $category-grid);
-		// height: calc(50vh - 0.5rem - 50px);
-		width: calc((100% / 3) - 1rem);
-		// min-height: 25vh;
 		display: flex;
 		background-color: $secondary;
-		margin-bottom: 1rem;
-		margin-right: 1rem;
+		margin: 0 calc(#{$padding} * 2) calc(#{$padding} * 2) 0;
+
+		&:first-child {
+			margin-left: 0;
+		}
 
 		&__form {
 			width: 100%;
@@ -64,24 +63,33 @@
 
 		&__top {
 			width: 100%;
-			height: 70%;
+			//height: 70%;
 			// min-height: 25rem;
 			display: flex;
 			flex-direction: row;
 		}
 
 		&__image {
-			width: 82%;
-			height: 100%;
+			width: calc(100% - (#{$padding} * 2));
+			height: calc(100% - (#{$padding} * 2));
 			display: flex;
 			align-items: center;
 			justify-content: center;
 			overflow: hidden;
+			padding: $padding;
 
-			img {
-				width: auto;
+			picture {
+				width: 100%;
 				height: 100%;
 				display: block;
+			}
+
+			img {
+				width: 100%;
+				height: 100%;
+				display: block;
+				object-position: center;
+				object-fit: cover;
 			}
 		}
 
@@ -132,34 +140,34 @@
 
 		&__bottom {
 			width: 100%;
-			height: 30%;
+			//height: 30%;
 			// min-height: 25rem;
 			display: flex;
 			flex-direction: column;
-			background-color: lighten($primary, 80%);
+			//background-color: lighten($primary, 80%);
 		}
 
 		&__title {
-			width: calc(100% - 2rem);
-			height: 5rem;
+			width: calc(100% - (#{$padding} * 2));
+			height: $headerWidth;
 			display: flex;
 			// flex-direction: column;
-			align-items: center;
-			justify-content: flex-end;
-			padding: 0 1rem;
-			background-color: $colorCategoryTitle;
+			align-items: flex-start;
+			justify-content: flex-start;
+			padding: 0 $padding;
+
 
 			h3 {
 				font: {
 					size: $font-size-large;
 				};
-				text-align: right;
+				text-align: left;
 			}
 		}
 
 		&__footer {
 			width: 100%;
-			height: 4rem;
+			height: $headerWidth;
 			display: flex;
 			flex-direction: row;
 			align-items: center;
@@ -172,27 +180,27 @@
 			display: flex;
 			flex-direction: row;
 			justify-content: flex-end;
-			background-color: $secondary;
+			background-color: $colorCategoryTitle;
 
 			.old_price {
-				width: calc(40% - 1rem);
+				width: calc(100% - (#{$padding} * 2));
 				height: 100%;
 				display: flex;
 				align-items: center;
-				justify-content: flex-end;
-				padding: 0 0.5rem;
+				justify-content: flex-start;
+				padding: 0 $padding;
 				color: $colorCategoryOldPrice;
 				text-decoration: line-through;
 				font-size: $font-size-base;
 			}
 
 			.price {
-				width: calc(60% - 1rem);
+				width: calc(100% - (#{$padding} * 2));
 				height: 100%;
 				display: flex;
 				align-items: center;
-				justify-content: flex-end;
-				padding: 0 0.5rem;
+				justify-content: flex-start;
+				padding: 0 $padding;
 				// font-weight: bold;
 				font-size: $font-size-large;
 			}
@@ -212,7 +220,7 @@
 				outline: none;
 				width: 100%;
 				height: 100%;
-				padding: 0 0.5rem;
+				padding: 0 $padding;
 				cursor: pointer;
 			}
 
@@ -222,7 +230,7 @@
 			}
 
 			svg {
-				width: 80%;
+				width: 100%;
 				// height: 100%;
 
 				#categoryCartAdd {
@@ -237,16 +245,17 @@
 			}
 
 			&:hover {
+				background-color: $primary;
 
 				svg {
 
 					#categoryCart {
-						fill: $primary;
+						fill: $colorProductCart;
 					}
 
 					#categoryCartAdd {
 						opacity: 1;
-						fill: $primary;
+						fill: $colorProductCart;
 						// transform: translateY(0);
 					}
 				}
@@ -347,10 +356,14 @@
 	@include grid-media($XXLarge) {
 
 		&-product {
-			width: calc((100% / 4) - 1rem);
+			width: calc((100% / 4) - (#{$padding} * 2));
 
-			&__footer {
-				height: 6rem;
+			&:nth-child(4n) {
+				margin-right: 0;
+			}
+
+			&__top {
+				height: calc((100vw / 4) - (#{$padding} * 4));
 			}
 		}
 	}
@@ -358,10 +371,29 @@
 	@include grid-media($XLarge) {
 
 		&-product {
-			width: calc((100% / 4) - 1rem);
+			width: calc((100% / 4) - (#{$padding} * 2));
 
-			&__footer {
-				height: 5rem;
+			&:nth-child(4n) {
+				margin-right: 0;
+			}
+
+			&__top {
+				height: calc((100vw / 4) - (#{$padding} * 4));
+			}
+		}
+	}
+
+	@include grid-media($Large) {
+
+		&-product {
+			width: calc((100% / 3) - (#{$padding} * 2));
+
+			&:nth-child(3n) {
+				margin-right: 0;
+			}
+
+			&__top {
+				height: calc((100vw / 3) - (#{$padding} * 4));
 			}
 		}
 	}
@@ -373,14 +405,14 @@
 		}
 
 		&-product {
-			// @include grid-column(1, $category-grid-medium);
-			width: calc((100% / 2) - 1rem);
+			width: calc((100% / 2) - (#{$padding} * 2));
 
-			&__vendor {
+			&:nth-child(2n) {
+				margin-right: 0;
+			}
 
-				.vendor {
-					width: 50%;
-				}
+			&__top {
+				height: calc((100vw / 2) - (#{$padding} * 2));
 			}
 
 			&__price {
@@ -408,14 +440,14 @@
 		}
 
 		&-product {
-			// @include grid-column(1, $category-grid-xsmall);
-			width: calc(100% - 1rem);
+			width: calc(100% - (#{$padding} * 2));
 
-			&__vendor {
+			&:nth-child(2n) {
+				margin-right: 0;
+			}
 
-				.vendor {
-					width: 100%;
-				}
+			&__top {
+				height: calc(100vw - (#{$padding} * 2));
 			}
 
 			&__price {
