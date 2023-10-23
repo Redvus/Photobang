@@ -6,13 +6,13 @@
 
 	&-main {
 		width: 50%;
-		height: calc(100vh - (#{$headerWidth} * 2));
+		height: calc(100vh - (#{$headerWidth} * 4));
 		position: fixed;
 		left: 0;
-		top: 0;
+		top: $headerWidth;
 		padding: $headerWidth 0;
 		background-color: $colorBack;
-		z-index: 9700;
+		z-index: 9991;
 		display: block;
 		//transform: translateX(calc(-100% - #{$headerWidth}));
 
@@ -97,14 +97,14 @@
 		// border-radius: 50%;
 		// border: 0.3rem solid $secondary;
 		background-color: $secondary;
-		position: absolute;
+		position: fixed;
 		left: 50%;
 		top: 50%;
 		transform: translate(-50%, -50%) rotate(45deg);
 		cursor: pointer;
 		transition: background 0.3s;
 		transform-origin: 50% 50%;
-		z-index: 9900;
+		z-index: 9992;
 
 		svg {
 			width: 2rem;
@@ -380,6 +380,18 @@
 				z-index: 9999;
 			}
 		}
+	}
+
+	&-mask {
+		width: 50%;
+		height: calc(100vh - (#{$headerWidth} * 2));
+		position: fixed;
+		right: $headerWidth;
+		top: $headerWidth;
+		background-color: rgba($primary, 0.5);
+		z-index: 9990;
+		display: block;
+		transition: opacity $base-duration;
 	}
 }
 

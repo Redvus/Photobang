@@ -20,26 +20,31 @@ const navMain = document.querySelectorAll("#navMain > ul > li"),
     navClose = document.getElementById('navClose')
 ;
 
+const navMask = document.createElement('div');
+navMask.className += 'nav-mask';
+
 function menuLeft() {
 
    let tl = new gsap.timeline({
-       reversed:true
+       reversed: true,
+       onStart: () => {
+           document.body.appendChild(navMask);
+       }
    });
 
     tl
-        // .to(navMenuIcon, {
-        //     duration: 0.6,
-        //     delay: "-0.8",
-        //     autoAlpha: 0,
-        //     ease: "back.inOut"
-        // })
-
+        .from(navMask, {
+            duration: 0.2,
+            delay: "-0.2",
+            autoAlpha: 0,
+            ease: "expoScale.inOut"
+        })
         .from(navBack, {
             duration: 0.4,
             delay: "-0.4",
             // autoAlpha: 0,
             x: "-100%",
-            zIndex: "-1",
+            // zIndex: "-1",
             ease: "expoScale.inOut"
         })
         .from(navMain, {
@@ -57,34 +62,6 @@ function menuLeft() {
             autoAlpha: 0,
             ease: "power2.Out"
         })
-        // .to(, {
-        //     duration: 0.6,
-        //     delay: "-1.1",
-        //     x: "-200%",
-        //     autoAlpha: 0,
-        //     ease: "back.inOut"
-        // })
-        // .to(, {
-        //     duration: 0.6,
-        //     delay: "-1.3",
-        //     x: "-200%",
-        //     autoAlpha: 0,
-        //     ease: "back.inOut"
-        // })
-        // .to(navBack, {
-        //     duration: 0.8,
-        //     delay: "-1.4",
-        //     right: "0",
-        //     zIndex: "9800",
-        //     ease: "power2.inOut"
-        // })
-        // .to(navMenuBack, {
-        //     duration: 0.8,
-        //     delay: "-1.4",
-        //     x: "-15",
-        //     autoAlpha: 0,
-        //     ease: "back.inOut"
-        // })
         .from(navClose, {
             duration: 0.3,
             delay: "-0.3",
@@ -92,12 +69,6 @@ function menuLeft() {
             x: "-50%",
             ease: "expoScale.in"
         })
-        // .to(headerTopLogo, {
-        //     duration: 0.6,
-        //     delay: "-1.2",
-        //     x: "-120%",
-        //     ease: "power2.inOut"
-        // })
     ;
 
     navToggle.addEventListener('click', () => {
@@ -105,6 +76,14 @@ function menuLeft() {
     });
     navClose.addEventListener('click', () => {
         tl.reversed() ? tl.restart() : tl.reverse();
+        gsap.to(navMask, {
+            duration: 0.2,
+            // delay: "-0.1",
+            autoAlpha: 0,
+            onComplete: () => {
+                document.body.removeChild(navMask);
+            }
+        });
     });
 
     return tl;
