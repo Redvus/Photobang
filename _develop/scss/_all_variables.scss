@@ -149,72 +149,49 @@ $HSmall: (media: "(max-height: 420px)");
 // @import url('https://fonts.googleapis.com/css?family=PT+Mono&subset=cyrillic'); //PT Mono
 // @import url('https://fonts.googleapis.com/css?family=Roboto+Slab'); //Roboto Slab
 
-//@font-face {
-//    font-family: "Roboto Black";
-//    src: local("fonts/Roboto-Black-export/"),
-//    url("fonts/Roboto-Black-export/Roboto-Black.woff2") format("woff2"),
-//    url("fonts/Roboto-Black-export/Roboto-Black.woff") format("woff");
-//    font-style: normal;
-//    font-weight: 400;
-//    font-display: swap;
-//}
+@font-face {
+    font-family: "Roboto Slab Regular";
+    src: local("fonts/Roboto Slab Regular/"),
+    url("fonts/RobotoSlab-Regular/RobotoSlab-Regular.woff2") format("woff2"),
+    url("fonts/RobotoSlab-Regular/RobotoSlab-Regular.woff") format("woff");
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+}
 
-//@include font-face (
-//    "Roboto Slab",
-//    "fonts/Roboto_Slab/RobotoSlab-Regular/RobotoSlab-Regular",
-//    ("eot", "woff", "ttf", "svg")
-//    ) {
-//    font-style: normal;
-//    font-weight: 400;
-//}
-//
-//@include font-face (
-//    "Roboto Slab Bold",
-//    "fonts/Roboto_Slab/RobotoSlab-Bold/RobotoSlab-Bold",
-//    ("otf", "woff", "woff2")
-//    ) {
-//    font-style: normal;
-//    font-weight: 400;
-//}
-//
-//@include font-face (
-//    "Proxima Nova",
-//    "fonts/Proxima Nova Regular/Proxima Nova Regular",
-//    ("eot", "woff", "ttf", "svg")
-//    ) {
-//    font-style: normal;
-//    font-weight: 400;
-//}
-//
-//@include font-face (
-//    "Proxima Nova Bold",
-//    "fonts/Proxima Nova Bold/Proxima Nova Bold",
-//    ("eot", "woff", "ttf", "svg")
-//    ) {
-//    font-style: normal;
-//    font-weight: 700;
-//}
-//
-//@include font-face (
-//    "fontawesome",
-//    "fonts/fontawesome/fontawesome-webfont",
-//    ("eot", "woff", "ttf", "svg")
-//    ) {
-//    font-style: normal;
-//    font-weight: 400;
-//}
-//
-//@include font-face (
-//    "si",
-//    "fonts/socicon/socicon",
-//    ("eot", "woff", "ttf", "svg")) {
-//    font-weight: normal;
-//    font-style: normal;
-//}
+@font-face {
+    font-family: "Roboto Slab Bold";
+    src: local("fonts/RobotoSlab-Bold/"),
+    url("fonts/RobotoSlab-Bold/RobotoSlab-Bold.woff2") format("woff2"),
+    url("fonts/RobotoSlab-Bold/RobotoSlab-Bold.woff") format("woff");
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+}
 
-$primary-font        :  'Roboto Slab', serif;
-$primary-font-bold   :  'Roboto Slab Bold', serif;
-$heading-font        :  "Proxima Nova";
+@font-face {
+    font-family: "Proxima Nova Regular";
+    src: local("fonts/ProximaNovaRegular/"),
+    url("fonts/ProximaNovaRegular/ProximaNovaRegular.woff2") format("woff2"),
+    url("fonts/ProximaNovaRegular/ProximaNovaRegular.woff") format("woff");
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Proxima Nova Bold";
+    src: local("fonts/ProximaNovaBold/"),
+    url("fonts/ProximaNovaBold/ProximaNovaBold.woff2") format("woff2"),
+    url("fonts/ProximaNovaBold/ProximaNovaBold.woff") format("woff");
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+}
+
+$primary-font        :  "Roboto Slab Regular";
+$primary-font-bold   :  "Roboto Slab Bold";
+$heading-font        :  "Proxima Nova Regular";
 $heading-font-bold   :  "Proxima Nova Bold";
 
 $body-font-color     :  lighten(#000, 20%);

@@ -1,4 +1,4 @@
-(function ($) {
+// (function ($) {
 
 
 
@@ -32,17 +32,19 @@
         });
     }
 
-    frontNavigationClick();
+    // frontNavigationClick();
 
 
     /*=====  End of Front Navigation  ======*/
 
+// })(jQuery);
 
-    /*====================================
-    =            Front Slider            =
-    ====================================*/
+/*====================================
+=            Front Slider            =
+====================================*/
 
-    var sliderFront = new MasterSlider();
+function frontSlider() {
+    let sliderFront = new MasterSlider();
     sliderFront.control('arrows' ,{insertTo:'#slider_arrow_front',autohide:false});
     // sliderFront.control('slideinfo',{insertTo:'#[[+galleryScriptInfo]]'});
 
@@ -53,14 +55,24 @@
         space: 0,
         loop: true,
         view:'flow',
-        layout:'fillscreen', //fullscreen
+        layout:'autofill', //fullscreen
         speed:20,
-//         grabCursor: false,
-//      swipe: false,
-//      mouse: false
     });
+}
+/*=====  End of Front Slider  ======*/
 
-    /*=====  End of Front Slider  ======*/
+function initMain() {
+    frontSlider();
+}
+
+function initMainMobile() {
+
+}
+
+if (document.body.clientWidth > 820 || screen.width > 820) {
+    initMain();
+} else {
+    initMainMobile();
+}
 
 
-})(jQuery);

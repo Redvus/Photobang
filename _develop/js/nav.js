@@ -37,7 +37,7 @@ function menuLeft() {
             duration: 0.2,
             delay: "-0.2",
             autoAlpha: 0,
-            ease: "expoScale.inOut"
+            ease: "expo.inOut"
         })
         .from(navBack, {
             duration: 0.4,
@@ -76,14 +76,7 @@ function menuLeft() {
     });
     navClose.addEventListener('click', () => {
         tl.reversed() ? tl.restart() : tl.reverse();
-        gsap.to(navMask, {
-            duration: 0.2,
-            // delay: "-0.1",
-            autoAlpha: 0,
-            onComplete: () => {
-                document.body.removeChild(navMask);
-            }
-        });
+        document.body.removeChild(navMask);
     });
 
     return tl;

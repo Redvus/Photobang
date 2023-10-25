@@ -91,29 +91,7 @@
 //     /*=====  End of Cookie 18+  ======*/
 //
 //
-//     /*====================================
-//     =            Front Slider            =
-//     ====================================*/
-//
-//     var sliderFront = new MasterSlider();
-//     sliderFront.control('arrows' ,{insertTo:'#slider_arrow_front',autohide:false});
-//     // sliderFront.control('slideinfo',{insertTo:'#[[+galleryScriptInfo]]'});
-//
-//     sliderFront.setup('slider_front' , {
-//         width: 730,
-//         height: 880,
-//         autoHeight: false,
-//         space: 0,
-//         loop: true,
-//         view:'flow',
-//         layout:'autofill', //fullscreen
-//         speed:20,
-//         grabCursor: true,
-//         swipe: true,
-//         mouse: true
-//     });
-//
-//     /*=====  End of Front Slider  ======*/
+
 //
 //
 //     /*==============================
