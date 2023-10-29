@@ -209,78 +209,6 @@
 //
 //     /*=====  End of Search  ======*/
 //
-//     /*================================
-//     =            MiniCart            =
-//     ================================*/
-//
-//     var miniCartToggle = $('.mini-cart'),
-//         miniCartContent = $('#miniCartContent'),
-//         miniCartBack = $('#cart_back_svg'),
-//         miniCartIcon = $('.miniCartIcon'),
-//         miniCartCount = $('.ms2_total_count'),
-//         miniCartClose = $('.minicart-close'),
-//         miniCartLink = $('#miniCartLink'),
-//         minicartFull = $('#minicartFull'),
-//         minicartFilter = $('.category-filter')
-//     ;
-//
-//     function miniCartRight() {
-//
-//         var tl = new TimelineMax({reversed:true, paused:true});
-//
-//         tl
-//             .to(miniCartContent, 0.6, {
-//                 right: 0,
-//                 zIndex: 100,
-//                 ease: Power1.easeInOut
-//             }, "-=0.6")
-//             .to(miniCartToggle, 0.6, {
-//                 zIndex: "1",
-//                 autoAlpha: "0",
-//                 ease: Back.easeInOut
-//             }, "-=0.6")
-//             .to(minicartFilter, 0.6, {
-//                 autoAlpha: "0",
-//                 ease: Power1.easeInOut
-//             }, "-=0.6")
-//             .to(miniCartLink, 0.6, {
-//                 display: "flex",
-//                 ease: Power1.easeInOut
-//             }, "-=0.6")
-//             .to(miniCartIcon, 0.4, {
-//                 autoAlpha: "0",
-//                 ease: Back.easeInOut
-//             }, "-=0.8")
-//             .to(miniCartCount, 0.4, {
-//                 autoAlpha: "0",
-//                 ease: Back.easeInOut
-//             }, "-=0.6")
-//             .to(miniCartClose, 0.4, {
-//                 autoAlpha: "1",
-//                 zIndex: "2",
-//                 ease: Back.easeInOut
-//             }, "-=0.4")
-//             // .to(miniCartLink, 1, {
-//             //     autoAlpha: "1",
-//             //     x: "-50%",
-//             //     ease: Back.easeInOut
-//             // }, "-=0.8")
-//         ;
-//
-//         minicartFull.on("click", function () {
-//             tl.reversed() ? tl.restart() : tl.reverse();
-//         });
-//         miniCartClose.on("click", function () {
-//             tl.reversed() ? tl.restart() : tl.reverse();
-//         });
-//
-//         return tl;
-//
-//     }
-//
-//     miniCartRight();
-//
-//     /*=====  End of MiniCart  ======*/
 //
 //     /*=====================================
 //     =            Filter Mobile            =
@@ -520,8 +448,82 @@
 //
 // })(jQuery);
 
+/*================================
+=            MiniCart            =
+================================*/
+const miniCartToggle = document.querySelector('.minicart'),
+    miniCartContent = document.getElementById('miniCartContent'),
+    miniCartBack = document.getElementById('cartBack'),
+    miniCartIcon = document.getElementById('miniCartIcon'),
+    miniCartCount = document.querySelector('.ms2_total_count'),
+    miniCartClose = document.getElementById('miniCartClose'),
+    miniCartLink = document.getElementById('miniCartLink'),
+    minicartFull = document.getElementById('minicartFull'),
+    minicartFilter = document.querySelector('.category-filter')
+;
+
+function miniCartLoad() {
+
+    let tl = new gsap.timeline({
+        reversed:true
+    });
+
+    tl
+        .from(miniCartContent, {
+            duration: 0.6,
+            delay: "-0.6",
+            x: "100%",
+            ease: "expo.inOut"
+        })
+        // .to(miniCartToggle, {
+        //     duration: 0.4,
+        //     delay: "-0.4",
+        //     autoAlpha: 0,
+        //     zIndex: "-1",
+        //     ease: "expo.inOut"
+        // })
+        // .to(miniCartLink, {
+        //     duration: 0.6,
+        //     delay: "-0.6",
+        //     autoAlpha: 1,
+        //     x: "10%",
+        //     ease: "power1.inOut"
+        // })
+        // .to(miniCartIcon, {
+        //     duration: 0.4,
+        //     delay: "-0.8",
+        //     autoAlpha: "0",
+        //     ease: "back.inOut"
+        // })
+        // .to(miniCartCount, {
+        //     duration: 0.4,
+        //     delay: "-0.6",
+        //     autoAlpha: "0",
+        //     ease: "back.inOut"
+        // })
+        // .to(miniCartClose, {
+        //     duration: 0.4,
+        //     delay: "-0.4",
+        //     autoAlpha: 1,
+        //     zIndex: 2,
+        //     ease: "power1.inOut"
+        // })
+    ;
+
+    minicartFull.addEventListener("click", function () {
+        tl.reversed() ? tl.restart() : tl.reverse();
+    });
+    miniCartClose.addEventListener("click", function () {
+        tl.reversed() ? tl.restart() : tl.reverse();
+    });
+
+    return tl;
+}
+/*=====  End of MiniCart  ======*/
+
 function initMain() {
     menuLeft();
+    miniCartLoad();
 }
 
 function initMainMobile() {

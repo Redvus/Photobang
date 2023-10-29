@@ -62,7 +62,7 @@ function frontSlider() {
 /*=====  End of Front Slider  ======*/
 
 function initMain() {
-    frontSlider();
+    // frontSlider();
 }
 
 function initMainMobile() {

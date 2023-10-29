@@ -33,7 +33,7 @@ $base-timing:       0.3s;
 /*----------  Nav  ----------*/
 $colorBack       : $secondary;               // Цвет заливки меню
 $colorText       : lighten($primary, 40%);  // Цвет текста меню
-$colorTextHover  : lighten($primary, 30%);  // Цвет текста при наведении
+$colorTextHover  :$primary;  // Цвет текста при наведении
 $colorTextActive : $primary;                // Цвет активного пункта меню
 
 /*----------  Header  ----------*/
@@ -94,7 +94,7 @@ $minicartBorder             : $secondary;
 $minicartToCart             : lighten($primary, 70%);
 
 /*----------  Product  ----------*/
-$colorBreadrumbs            : lighten($primary, 50%);
+$colorBreadrumbs            : lighten($primary, 70%);
 $colorBorderBreadrumbs      : $colorBreadrumbs;
 $colorOldPrice              : $colorBreadrumbs;
 

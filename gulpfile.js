@@ -91,6 +91,17 @@ gulp.task('front-js', function(){
     .pipe(gulp.dest(path.dest.js));
 });
 
+gulp.task('product-js', function(){
+    return gulp.src([
+        // path.src.js + 'masterslider.js',
+        path.src.js + 'product.js'
+    ])
+        .pipe(concat('product.js'))
+        .pipe(terser())
+        .pipe(rename({suffix: "-min"}))
+        .pipe(gulp.dest(path.dest.js));
+});
+
 gulp.task('contact-js', function () {
     return gulp.src([
         // path.src.js + 'nav.js',
@@ -152,7 +163,8 @@ gulp.task('watch', function() {
     gulp.watch(path.watch.js + 'vendor.js', gulp.series('vendor-js'));
     gulp.watch([path.watch.js + 'main.js', path.watch.js + 'nav.js'], gulp.series('main-js'));
     gulp.watch(path.watch.js + 'front.js', gulp.series('front-js'));
-    gulp.watch(path.watch.js + 'contact.js', gulp.series('contact-js'));
+    gulp.watch(path.watch.js + 'front.js', gulp.series('front-js'));
+    gulp.watch(path.watch.js + 'product.js', gulp.series('product-js'));
     gulp.watch(path.watch.js + 'preloader.js', gulp.series('preloader-js'));
     // gulp.watch(path.watch.js + 'jgrowl.js', gulp.series('jgrowl-js'));
 

@@ -294,40 +294,6 @@
 				}
 			}
 		}
-
-		.minicart-close {
-			width: 50px;
-			height: 5rem;
-			position: absolute;
-			top: 50%;
-			// right: 0;
-			display: flex;
-			align-items: center;
-			// justify-content: center;
-			transform: translateY(-50%);
-			opacity: 0;
-			z-index: 1;
-			cursor: pointer;
-
-			#miniCartClose {
-				width: 30px;
-				height: 30px;
-				position: absolute;
-				fill: $primary;
-				top: 50%;
-				// left: 20%;
-				transform: rotate(45deg) translateY(-50%);
-				transform-origin: 50% 50%;
-			}
-
-			// &:hover {
-			// 	// transform: rotate(225deg)
-
-			// 	#miniCartClose {
-			// 		 // translateY(-50%);
-			// 	}
-			// }
-		}
 	}
 
 	&-bottom {
