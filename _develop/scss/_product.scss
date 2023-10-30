@@ -178,13 +178,13 @@
 			height: calc(#{$headerWidth} + (#{$headerWidth} / 4));
 			display: flex;
 			position: absolute;
-			top: 50%;
-			left: 50%;
+			top: calc(100% - (#{$headerWidth} / 1.2));
+			left: calc(100% - (#{$headerWidth} / 1.2));
 			transform: translate(-50%, -50%);
 			cursor: pointer;
 			z-index: 10;
 			//background-color: rgba($primary, 30%);
-			opacity: 0.5;
+			opacity: 1;
 			transition: opacity $base-duration;
 
 			#productViewIcon {
@@ -212,7 +212,7 @@
 		&:hover {
 
 			.product-content__image_hide {
-				opacity: 1;
+				//opacity: 1;
 
 				#productViewIcon {
 
