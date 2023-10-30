@@ -24,12 +24,12 @@
 	position: relative;
 
 	&__gallery {
-		width: calc(50% - (#{$headerWidth} * 2));
+		width: calc(100% - (#{$headerWidth} * 2));
 		height: calc(100vh - (#{$headerWidth} * 2));
 		display: block;
 		background-color: $secondary;
 		position: fixed;
-		padding: 0 $headerWidth 0 0;
+		//padding: 0 $headerWidth 0 0;
 		overflow: hidden;
 		z-index: 0;
 
@@ -40,10 +40,11 @@
 			align-items: center;
 			justify-content: center;
 			overflow: hidden;
+			cursor: url('images/imageClose.png') 30 30, auto;
 
 			picture {
-				width: 100%;
-				height: 100%;
+				width: 90%;
+				height: 90%;
 				display: block;
 
 				img {
@@ -161,8 +162,6 @@
 		left: $headerWidth;
 		overflow: hidden;
 		z-index: 1;
-		transition: opacity $base-duration;
-		cursor: pointer;
 		//cursor: url('./images/cursorHide.png') 40 40, auto;
 
 		img {
@@ -174,8 +173,58 @@
 			object-fit: cover;
 		}
 
-		&:hover {
+		&_hide {
+			width: calc(#{$headerWidth} + (#{$headerWidth} / 4));
+			height: calc(#{$headerWidth} + (#{$headerWidth} / 4));
+			display: flex;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			cursor: pointer;
+			z-index: 10;
+			//background-color: rgba($primary, 30%);
+			opacity: 0.5;
+			transition: opacity $base-duration;
+
+			#productViewIcon {
+
+				path {
+					fill: $secondary;
+				}
+			}
+		}
+
+		&:after {
+			content: "";
+			width: 100%;
+			height: 100%;
+			display: block;
+			position: absolute;
+			top: 0;
+			left: 0;
+			z-index: 8;
+			background-color: rgba($secondary, 30%);
 			opacity: 0;
+			transition: opacity $base-duration;
+		}
+
+		&:hover {
+
+			.product-content__image_hide {
+				opacity: 1;
+
+				#productViewIcon {
+
+					path {
+						fill: $primary;
+					}
+				}
+			}
+
+			&:after {
+				opacity: 1;
+			}
 		}
 	}
 
@@ -325,7 +374,7 @@
 		&_top {
 			width: 100%;
 			// height: 10vh;
-			height: 5.5rem;
+			height: calc(#{$headerWidth} + (#{$headerWidth} / 4));
 			display: flex;
 			flex-direction: row;
 			align-items: center;

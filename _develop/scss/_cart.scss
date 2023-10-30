@@ -9,7 +9,7 @@
 
 	&__total {
 		width: 50%;
-		height: calc(100vh - 100px);
+		height: calc(100vh - (#{$headerWidth} * 2));
 		display: block;
 		// display: flex;
 		// justify-content: center;
@@ -29,17 +29,17 @@
 	}
 
 	.cart-total {
-		width: calc(50% - 50px - 14rem);
-		height: 4rem;
+		width: calc(50% - #{$headerWidth} - ((#{$headerWidth} + ((#{$headerWidth} / 4) * 3)) * 2));
+		height: $headerWidth;
 		// display: block;
 		display: flex;
 		flex-direction: row;
 		align-items: center;
 		background-color: $primary;
 		color: $colorTextOnBlack;
-		padding: 0 7rem;
+		padding: 0 calc(#{$headerWidth} + ((#{$headerWidth} / 4) * 3));
 		position: fixed;
-		left: 50px;
+		left: $headerWidth;
 		top: 50%;
 		transform: translateY(-50%);
 
@@ -140,15 +140,15 @@
 	}
 
 	&__order {
-		width: calc(50% - 5rem);
-		min-height: calc(100vh - 100px);
+		width: calc(50% - (#{$headerWidth} + (#{$headerWidth} / 4)));
+		min-height: calc(100vh - (#{$headerWidth} * 2));
 		display: flex;
 		align-items: center;
 		justify-content: center;
 		background-color: $primary;
 		color: $colorTextOnBlack;
 		position: relative;
-		padding: 0 1rem 0 4rem;
+		padding: 0 calc(#{$headerWidth} / 4) 0 $headerWidth;
 		overflow: hidden;
 
 		.cart-table {
@@ -166,7 +166,7 @@
 				// border-right: none;
 
 				&__image {
-					width: 20%;
+					width: 30%;
 					height: 8rem;
 					display: flex;
 					align-items: center;
@@ -176,22 +176,23 @@
 					background-color: $secondary;
 
 					a {
-						width: 100%;
+						width: calc(100% - #{$cart_table_border});
 						height: 8rem;
 						display: flex;
 						align-items: center;
 						justify-content: center;
 						overflow: hidden;
+						margin-left: $cart_table_border;
 
 						img {
 							width: auto;
-							height: 80%;
+							height: 100%;
 						}
 					}
 				}
 
 				&__product {
-					width: 45%;
+					width: 35%;
 					height: 8rem;
 					display: flex;
 					flex-direction: column;
@@ -205,7 +206,7 @@
 						&__title {
 							width: calc(100% - 2rem);
 							// height: calc(100% - (#{$cart_vert_paddind} * 2));
-							height: 50%;
+							height: 100%;
 							display: flex;
 							align-items: center;
 							justify-content: flex-start;
@@ -221,12 +222,12 @@
 
 						&__vendor {
 							width: calc(100% - 2rem);
-							height: calc(100% - (#{$cart_vert_paddind} * 2));
+							//height: calc(100% - (#{$cart_vert_paddind} * 2));
 							height: 50%;
 							display: flex;
 							align-items: center;
 							justify-content: flex-start;
-							padding: $cart_vert_paddind 1rem;
+							//padding: $cart_vert_paddind 1rem;
 							padding: 0 1rem;
 						}
 					}
@@ -347,7 +348,7 @@
 								}
 
 								&__button {
-									width: 0%;
+									width: 0;
 								}
 							}
 						}
@@ -431,7 +432,7 @@
 
 	&__empty {
 		width: 100%;
-		height: calc(100vh - 100px);
+		height: calc(100vh - (#{$headerWidth} * 2));
 		background-color: $cartBackground;
 		display: flex;
 		// justify-content: center;

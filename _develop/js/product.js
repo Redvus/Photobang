@@ -20,22 +20,39 @@ function productSlider() {
 }
 /*=====  End of Front Slider  ======*/
 
-function productImageLook() {
-    const productImage = document.querySelector('.product-content__image');
+const productImage = document.querySelector('.product-content__image'),
+    productOptions = document.querySelector('.product-content__options'),
+    productGallery = document.querySelector('.product-content__gallery_inside'),
+    productViewIcon = document.getElementById('productViewIcon')
+;
 
-    productImage.addEventListener("mouseenter", () => {
-        gsap.to(productImage, {
+function productImageLook() {
+    let tl = new gsap.timeline({
+        reversed: true
+    });
+
+    tl
+        .to([productImage, productOptions], {
             duration: 0.3,
             autoAlpha: 0
-        });
+        })
+        .from(productGallery, {
+            duration: 0.2,
+            delay: "-0.2",
+            autoAlpha: 0,
+            scale: 0.97
+        })
+    ;
+
+    productViewIcon.addEventListener("click", () => {
+        tl.play();
     });
 
-    productImage.addEventListener("mouseleave", () => {
-        gsap.to(productImage, {
-            duration: 0.3,
-            autoAlpha: 1
-        });
+    productGallery.addEventListener("click", () => {
+        tl.reversed() ? tl.restart() : tl.reverse();
     });
+
+    return tl;
 }
 
 function initMain() {

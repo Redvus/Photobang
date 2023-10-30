@@ -458,8 +458,8 @@ const miniCartToggle = document.querySelector('.minicart'),
     miniCartCount = document.querySelector('.ms2_total_count'),
     miniCartClose = document.getElementById('miniCartClose'),
     miniCartLink = document.getElementById('miniCartLink'),
-    minicartFull = document.getElementById('minicartFull'),
-    minicartFilter = document.querySelector('.category-filter')
+    miniCartFull = document.getElementById('minicartFull'),
+    miniCartFilter = document.querySelector('.category-filter')
 ;
 
 function miniCartLoad() {
@@ -510,7 +510,7 @@ function miniCartLoad() {
         // })
     ;
 
-    minicartFull.addEventListener("click", function () {
+    miniCartFull.addEventListener("click", function () {
         tl.reversed() ? tl.restart() : tl.reverse();
     });
     miniCartClose.addEventListener("click", function () {
