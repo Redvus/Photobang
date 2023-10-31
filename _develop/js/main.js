@@ -522,6 +522,7 @@ function miniCartLoad() {
 /*=====  End of MiniCart  ======*/
 
 function initMain() {
+    preloaderBeginLoad();
     menuLeft();
     miniCartLoad();
 }

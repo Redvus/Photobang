@@ -71,6 +71,7 @@ gulp.task('login-scss', function(){
 
 gulp.task('main-js', function(){
     return gulp.src([
+        path.src.js + 'preloaderBegin.js',
         path.src.js + 'nav.js',
         path.src.js + 'main.js'
     ])
@@ -161,7 +162,11 @@ gulp.task('watch', function() {
     gulp.watch(path.watch.scss + '*.scss', gulp.series('main-scss'));
     gulp.watch(path.watch.scss + 'login.scss', gulp.series('login-scss'));
     gulp.watch(path.watch.js + 'vendor.js', gulp.series('vendor-js'));
-    gulp.watch([path.watch.js + 'main.js', path.watch.js + 'nav.js'], gulp.series('main-js'));
+    gulp.watch([
+        path.watch.js + 'main.js',
+        path.watch.js + 'nav.js',
+        path.watch.js + 'preloaderBegin.js'
+    ], gulp.series('main-js'));
     gulp.watch(path.watch.js + 'front.js', gulp.series('front-js'));
     gulp.watch(path.watch.js + 'front.js', gulp.series('front-js'));
     gulp.watch(path.watch.js + 'product.js', gulp.series('product-js'));

@@ -140,6 +140,17 @@
 		animation: translateIn 1.5s ease-in-out;
 	}
 
+	&-begin {
+		width: 100vw;
+		height: 100vh;
+		display: block;
+		position: fixed;
+		top: 0;
+		left: 0;
+		background-color: $secondary;
+		z-index: 9999;
+	}
+
 	@include grid-media($Medium) {
 
         &-category {
